@@ -152,6 +152,7 @@
             this.btnRoomRegister.ImageIndex = 11;
             this.btnRoomRegister.LargeGlyph = global::KaraManager.Properties.Resources.RoomRegister;
             this.btnRoomRegister.Name = "btnRoomRegister";
+            this.btnRoomRegister.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRoomRegister_ItemClick);
             // 
             // btnRoomDetails
             // 
@@ -162,6 +163,7 @@
             this.btnRoomDetails.LargeWidth = 70;
             this.btnRoomDetails.Name = "btnRoomDetails";
             this.btnRoomDetails.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnRoomDetails.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRoomDetails_ItemClick);
             // 
             // btnPlace
             // 
@@ -185,6 +187,7 @@
             this.btnWorker.ImageIndex = 14;
             this.btnWorker.LargeGlyph = global::KaraManager.Properties.Resources.Worker;
             this.btnWorker.Name = "btnWorker";
+            this.btnWorker.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnWorker_ItemClick);
             // 
             // btnCustomer
             // 
@@ -197,6 +200,7 @@
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.btnCustomer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCustomer_ItemClick);
             // 
             // btnDateReport
             // 

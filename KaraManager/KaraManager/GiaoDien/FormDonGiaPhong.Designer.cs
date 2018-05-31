@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDonGiaPhong));
             this.grbRoomPrice = new System.Windows.Forms.GroupBox();
             this.dgvRoomPrice = new System.Windows.Forms.DataGridView();
+            this.ColRoomID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColRoomName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColRoomCat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tsRoomPrice = new System.Windows.Forms.ToolStrip();
             this.tSAddRoomPrice = new System.Windows.Forms.ToolStripButton();
             this.tSFixRoomPrice = new System.Windows.Forms.ToolStripButton();
             this.tSRemoveRoomPrice = new System.Windows.Forms.ToolStripButton();
             this.tSReloadRoomPrice = new System.Windows.Forms.ToolStripButton();
-            this.ColRoomID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColRoomName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColRoomCat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbRoomPrice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRoomPrice)).BeginInit();
             this.tsRoomPrice.SuspendLayout();
@@ -71,6 +71,26 @@
             this.dgvRoomPrice.Name = "dgvRoomPrice";
             this.dgvRoomPrice.Size = new System.Drawing.Size(554, 296);
             this.dgvRoomPrice.TabIndex = 1;
+            // 
+            // ColRoomID
+            // 
+            this.ColRoomID.HeaderText = "STT";
+            this.ColRoomID.Name = "ColRoomID";
+            // 
+            // ColRoomName
+            // 
+            this.ColRoomName.HeaderText = "Tên phòng";
+            this.ColRoomName.Name = "ColRoomName";
+            // 
+            // ColRoomCat
+            // 
+            this.ColRoomCat.HeaderText = "Loại phòng";
+            this.ColRoomCat.Name = "ColRoomCat";
+            // 
+            // ColPrice
+            // 
+            this.ColPrice.HeaderText = "Đơn giá";
+            this.ColPrice.Name = "ColPrice";
             // 
             // tsRoomPrice
             // 
@@ -121,26 +141,6 @@
             this.tSReloadRoomPrice.Size = new System.Drawing.Size(125, 30);
             this.tSReloadRoomPrice.Text = "Tải lại danh sách";
             // 
-            // ColRoomID
-            // 
-            this.ColRoomID.HeaderText = "STT";
-            this.ColRoomID.Name = "ColRoomID";
-            // 
-            // ColRoomName
-            // 
-            this.ColRoomName.HeaderText = "Tên phòng";
-            this.ColRoomName.Name = "ColRoomName";
-            // 
-            // ColRoomCat
-            // 
-            this.ColRoomCat.HeaderText = "Loại phòng";
-            this.ColRoomCat.Name = "ColRoomCat";
-            // 
-            // ColPrice
-            // 
-            this.ColPrice.HeaderText = "Đơn giá";
-            this.ColPrice.Name = "ColPrice";
-            // 
             // FormDonGiaPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,6 +148,7 @@
             this.ClientSize = new System.Drawing.Size(560, 343);
             this.Controls.Add(this.grbRoomPrice);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FormDonGiaPhong";
             this.Text = "Đơn Giá Phòng";
             this.grbRoomPrice.ResumeLayout(false);

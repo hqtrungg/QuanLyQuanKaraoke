@@ -110,6 +110,36 @@
     <Compile Include="GiaoDien\FormQLKhachHang.Designer.cs">
       <DependentUpon>FormQLKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\UCFormDatPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\UCFormDatPhong.Designer.cs">
+      <DependentUpon>UCFormDatPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\UCFormDonGiaPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\UCFormDonGiaPhong.Designer.cs">
+      <DependentUpon>UCFormDonGiaPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\UCFormQLKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\UCFormQLKhachHang.Designer.cs">
+      <DependentUpon>UCFormQLKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\UCFormQLNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\UCFormQLNhanVien.Designer.cs">
+      <DependentUpon>UCFormQLNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\UCFormQLPhongHat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\UCFormQLPhongHat.Designer.cs">
+      <DependentUpon>UCFormQLPhongHat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fmMain.resx">
@@ -132,6 +162,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\FormQLPhongHat.resx">
       <DependentUpon>FormQLPhongHat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\UCFormDatPhong.resx">
+      <DependentUpon>UCFormDatPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\UCFormDonGiaPhong.resx">
+      <DependentUpon>UCFormDonGiaPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\UCFormQLKhachHang.resx">
+      <DependentUpon>UCFormQLKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\UCFormQLNhanVien.resx">
+      <DependentUpon>UCFormQLNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\UCFormQLPhongHat.resx">
+      <DependentUpon>UCFormQLPhongHat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -248,6 +293,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="IMG\Money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Dollar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

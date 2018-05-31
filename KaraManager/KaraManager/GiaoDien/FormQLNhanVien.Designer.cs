@@ -30,42 +30,43 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLNhanVien));
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.lbPhoneNumber = new System.Windows.Forms.Label();
-            this.lbAddress = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.lbDateOfBirth = new System.Windows.Forms.Label();
-            this.gbWorkerGender = new System.Windows.Forms.GroupBox();
-            this.rbtnWorkerFemale = new System.Windows.Forms.RadioButton();
-            this.rbtnWorkerMale = new System.Windows.Forms.RadioButton();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.lbWorkerID = new System.Windows.Forms.Label();
-            this.lbWorkerName = new System.Windows.Forms.Label();
-            this.lbWorker = new System.Windows.Forms.Label();
             this.gbWorkerDataList = new System.Windows.Forms.GroupBox();
-            this.tSWorkerData = new System.Windows.Forms.ToolStrip();
             this.dgvWorkerData = new System.Windows.Forms.DataGridView();
-            this.btnSaveDataWorker = new System.Windows.Forms.Button();
-            this.tSAddWorkerData = new System.Windows.Forms.ToolStripButton();
-            this.tSFixWorkerData = new System.Windows.Forms.ToolStripButton();
-            this.tSRemoveWorkerData = new System.Windows.Forms.ToolStripButton();
-            this.tSReloadWorkerData = new System.Windows.Forms.ToolStripButton();
             this.ColWorkerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColWorkerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColWorkerGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColWorkerDateOfBirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColWorkerAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColWorkerPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tSWorkerData = new System.Windows.Forms.ToolStrip();
+            this.tSAddWorkerData = new System.Windows.Forms.ToolStripButton();
+            this.tSFixWorkerData = new System.Windows.Forms.ToolStripButton();
+            this.tSRemoveWorkerData = new System.Windows.Forms.ToolStripButton();
+            this.tSReloadWorkerData = new System.Windows.Forms.ToolStripButton();
+            this.gbWorkerDataInput = new System.Windows.Forms.GroupBox();
+            this.lbWorkerName = new System.Windows.Forms.Label();
+            this.lbWorkerID = new System.Windows.Forms.Label();
+            this.lbWorkerAddress = new System.Windows.Forms.Label();
+            this.lbWorkerPhoneNumber = new System.Windows.Forms.Label();
+            this.lbWorkerDateOfBirth = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.gbWorkerGender = new System.Windows.Forms.GroupBox();
+            this.rbtnWorkerMale = new System.Windows.Forms.RadioButton();
+            this.rbtnWorkerFemale = new System.Windows.Forms.RadioButton();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnWorkerDataSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            this.gbWorkerGender.SuspendLayout();
             this.gbWorkerDataList.SuspendLayout();
-            this.tSWorkerData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWorkerData)).BeginInit();
+            this.tSWorkerData.SuspendLayout();
+            this.gbWorkerDataInput.SuspendLayout();
+            this.gbWorkerGender.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer2
@@ -77,19 +78,7 @@
             // splitContainer2.Panel1
             // 
             this.splitContainer2.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.splitContainer2.Panel1.Controls.Add(this.btnSaveDataWorker);
-            this.splitContainer2.Panel1.Controls.Add(this.lbPhoneNumber);
-            this.splitContainer2.Panel1.Controls.Add(this.lbAddress);
-            this.splitContainer2.Panel1.Controls.Add(this.dateTimePicker2);
-            this.splitContainer2.Panel1.Controls.Add(this.lbDateOfBirth);
-            this.splitContainer2.Panel1.Controls.Add(this.gbWorkerGender);
-            this.splitContainer2.Panel1.Controls.Add(this.textBox8);
-            this.splitContainer2.Panel1.Controls.Add(this.textBox7);
-            this.splitContainer2.Panel1.Controls.Add(this.textBox6);
-            this.splitContainer2.Panel1.Controls.Add(this.textBox5);
-            this.splitContainer2.Panel1.Controls.Add(this.lbWorkerID);
-            this.splitContainer2.Panel1.Controls.Add(this.lbWorkerName);
-            this.splitContainer2.Panel1.Controls.Add(this.lbWorker);
+            this.splitContainer2.Panel1.Controls.Add(this.gbWorkerDataInput);
             // 
             // splitContainer2.Panel2
             // 
@@ -97,139 +86,6 @@
             this.splitContainer2.Size = new System.Drawing.Size(920, 473);
             this.splitContainer2.SplitterDistance = 306;
             this.splitContainer2.TabIndex = 0;
-            // 
-            // lbPhoneNumber
-            // 
-            this.lbPhoneNumber.AutoSize = true;
-            this.lbPhoneNumber.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPhoneNumber.Location = new System.Drawing.Point(18, 346);
-            this.lbPhoneNumber.Name = "lbPhoneNumber";
-            this.lbPhoneNumber.Size = new System.Drawing.Size(79, 14);
-            this.lbPhoneNumber.TabIndex = 14;
-            this.lbPhoneNumber.Text = "Số điện thoại";
-            // 
-            // lbAddress
-            // 
-            this.lbAddress.AutoSize = true;
-            this.lbAddress.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAddress.Location = new System.Drawing.Point(15, 292);
-            this.lbAddress.Name = "lbAddress";
-            this.lbAddress.Size = new System.Drawing.Size(42, 14);
-            this.lbAddress.TabIndex = 13;
-            this.lbAddress.Text = "Địa chỉ";
-            this.lbAddress.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(18, 255);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(273, 21);
-            this.dateTimePicker2.TabIndex = 12;
-            // 
-            // lbDateOfBirth
-            // 
-            this.lbDateOfBirth.AutoSize = true;
-            this.lbDateOfBirth.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDateOfBirth.Location = new System.Drawing.Point(15, 239);
-            this.lbDateOfBirth.Name = "lbDateOfBirth";
-            this.lbDateOfBirth.Size = new System.Drawing.Size(59, 14);
-            this.lbDateOfBirth.TabIndex = 11;
-            this.lbDateOfBirth.Text = "Ngày sinh";
-            // 
-            // gbWorkerGender
-            // 
-            this.gbWorkerGender.Controls.Add(this.rbtnWorkerFemale);
-            this.gbWorkerGender.Controls.Add(this.rbtnWorkerMale);
-            this.gbWorkerGender.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbWorkerGender.Location = new System.Drawing.Point(15, 160);
-            this.gbWorkerGender.Name = "gbWorkerGender";
-            this.gbWorkerGender.Size = new System.Drawing.Size(276, 54);
-            this.gbWorkerGender.TabIndex = 10;
-            this.gbWorkerGender.TabStop = false;
-            this.gbWorkerGender.Text = "Giới tính";
-            // 
-            // rbtnWorkerFemale
-            // 
-            this.rbtnWorkerFemale.AutoSize = true;
-            this.rbtnWorkerFemale.Location = new System.Drawing.Point(176, 20);
-            this.rbtnWorkerFemale.Name = "rbtnWorkerFemale";
-            this.rbtnWorkerFemale.Size = new System.Drawing.Size(41, 18);
-            this.rbtnWorkerFemale.TabIndex = 1;
-            this.rbtnWorkerFemale.TabStop = true;
-            this.rbtnWorkerFemale.Text = "Nữ";
-            this.rbtnWorkerFemale.UseVisualStyleBackColor = true;
-            // 
-            // rbtnWorkerMale
-            // 
-            this.rbtnWorkerMale.AutoSize = true;
-            this.rbtnWorkerMale.Location = new System.Drawing.Point(30, 20);
-            this.rbtnWorkerMale.Name = "rbtnWorkerMale";
-            this.rbtnWorkerMale.Size = new System.Drawing.Size(49, 18);
-            this.rbtnWorkerMale.TabIndex = 0;
-            this.rbtnWorkerMale.TabStop = true;
-            this.rbtnWorkerMale.Text = "Nam";
-            this.rbtnWorkerMale.UseVisualStyleBackColor = true;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(18, 362);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(273, 21);
-            this.textBox8.TabIndex = 9;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(18, 308);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(273, 21);
-            this.textBox7.TabIndex = 8;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(15, 118);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(276, 21);
-            this.textBox6.TabIndex = 7;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(15, 59);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(276, 21);
-            this.textBox5.TabIndex = 6;
-            // 
-            // lbWorkerID
-            // 
-            this.lbWorkerID.AutoSize = true;
-            this.lbWorkerID.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWorkerID.Location = new System.Drawing.Point(12, 102);
-            this.lbWorkerID.Name = "lbWorkerID";
-            this.lbWorkerID.Size = new System.Drawing.Size(38, 14);
-            this.lbWorkerID.TabIndex = 2;
-            this.lbWorkerID.Text = "Mã số";
-            // 
-            // lbWorkerName
-            // 
-            this.lbWorkerName.AutoSize = true;
-            this.lbWorkerName.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWorkerName.Location = new System.Drawing.Point(12, 43);
-            this.lbWorkerName.Name = "lbWorkerName";
-            this.lbWorkerName.Size = new System.Drawing.Size(61, 14);
-            this.lbWorkerName.TabIndex = 1;
-            this.lbWorkerName.Text = "Họ và tên";
-            // 
-            // lbWorker
-            // 
-            this.lbWorker.BackColor = System.Drawing.Color.Yellow;
-            this.lbWorker.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbWorker.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWorker.ForeColor = System.Drawing.Color.Blue;
-            this.lbWorker.Location = new System.Drawing.Point(4, 4);
-            this.lbWorker.Name = "lbWorker";
-            this.lbWorker.Size = new System.Drawing.Size(299, 29);
-            this.lbWorker.TabIndex = 0;
-            this.lbWorker.Text = "Nhập thông tin nhân viên";
-            this.lbWorker.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // gbWorkerDataList
             // 
@@ -243,19 +99,6 @@
             this.gbWorkerDataList.TabIndex = 0;
             this.gbWorkerDataList.TabStop = false;
             this.gbWorkerDataList.Text = "Danh Sách Nhân Viên";
-            // 
-            // tSWorkerData
-            // 
-            this.tSWorkerData.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tSAddWorkerData,
-            this.tSFixWorkerData,
-            this.tSRemoveWorkerData,
-            this.tSReloadWorkerData});
-            this.tSWorkerData.Location = new System.Drawing.Point(5, 21);
-            this.tSWorkerData.Name = "tSWorkerData";
-            this.tSWorkerData.Size = new System.Drawing.Size(597, 33);
-            this.tSWorkerData.TabIndex = 0;
-            this.tSWorkerData.Text = "toolStrip1";
             // 
             // dgvWorkerData
             // 
@@ -274,17 +117,48 @@
             this.dgvWorkerData.Size = new System.Drawing.Size(599, 414);
             this.dgvWorkerData.TabIndex = 1;
             // 
-            // btnSaveDataWorker
+            // ColWorkerID
             // 
-            this.btnSaveDataWorker.Image = global::KaraManager.Properties.Resources.Tick;
-            this.btnSaveDataWorker.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveDataWorker.Location = new System.Drawing.Point(90, 403);
-            this.btnSaveDataWorker.Name = "btnSaveDataWorker";
-            this.btnSaveDataWorker.Size = new System.Drawing.Size(120, 44);
-            this.btnSaveDataWorker.TabIndex = 15;
-            this.btnSaveDataWorker.Text = "Lưu danh sách";
-            this.btnSaveDataWorker.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSaveDataWorker.UseVisualStyleBackColor = true;
+            this.ColWorkerID.HeaderText = "ID";
+            this.ColWorkerID.Name = "ColWorkerID";
+            // 
+            // ColWorkerName
+            // 
+            this.ColWorkerName.HeaderText = "Họ và tên";
+            this.ColWorkerName.Name = "ColWorkerName";
+            // 
+            // ColWorkerGender
+            // 
+            this.ColWorkerGender.HeaderText = "Giới tính";
+            this.ColWorkerGender.Name = "ColWorkerGender";
+            // 
+            // ColWorkerDateOfBirth
+            // 
+            this.ColWorkerDateOfBirth.HeaderText = "Ngày sinh";
+            this.ColWorkerDateOfBirth.Name = "ColWorkerDateOfBirth";
+            // 
+            // ColWorkerAddress
+            // 
+            this.ColWorkerAddress.HeaderText = "Địa chỉ";
+            this.ColWorkerAddress.Name = "ColWorkerAddress";
+            // 
+            // ColWorkerPhoneNumber
+            // 
+            this.ColWorkerPhoneNumber.HeaderText = "Số điện thoại";
+            this.ColWorkerPhoneNumber.Name = "ColWorkerPhoneNumber";
+            // 
+            // tSWorkerData
+            // 
+            this.tSWorkerData.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tSAddWorkerData,
+            this.tSFixWorkerData,
+            this.tSRemoveWorkerData,
+            this.tSReloadWorkerData});
+            this.tSWorkerData.Location = new System.Drawing.Point(5, 21);
+            this.tSWorkerData.Name = "tSWorkerData";
+            this.tSWorkerData.Size = new System.Drawing.Size(597, 33);
+            this.tSWorkerData.TabIndex = 0;
+            this.tSWorkerData.Text = "toolStrip1";
             // 
             // tSAddWorkerData
             // 
@@ -325,84 +199,196 @@
             this.tSReloadWorkerData.Size = new System.Drawing.Size(115, 30);
             this.tSReloadWorkerData.Text = "Tải lại danh sách";
             // 
-            // ColWorkerID
+            // gbWorkerDataInput
             // 
-            this.ColWorkerID.HeaderText = "ID";
-            this.ColWorkerID.Name = "ColWorkerID";
+            this.gbWorkerDataInput.Controls.Add(this.btnWorkerDataSave);
+            this.gbWorkerDataInput.Controls.Add(this.dateTimePicker1);
+            this.gbWorkerDataInput.Controls.Add(this.gbWorkerGender);
+            this.gbWorkerDataInput.Controls.Add(this.textBox4);
+            this.gbWorkerDataInput.Controls.Add(this.textBox3);
+            this.gbWorkerDataInput.Controls.Add(this.textBox2);
+            this.gbWorkerDataInput.Controls.Add(this.textBox1);
+            this.gbWorkerDataInput.Controls.Add(this.lbWorkerDateOfBirth);
+            this.gbWorkerDataInput.Controls.Add(this.lbWorkerPhoneNumber);
+            this.gbWorkerDataInput.Controls.Add(this.lbWorkerAddress);
+            this.gbWorkerDataInput.Controls.Add(this.lbWorkerID);
+            this.gbWorkerDataInput.Controls.Add(this.lbWorkerName);
+            this.gbWorkerDataInput.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbWorkerDataInput.Location = new System.Drawing.Point(3, 4);
+            this.gbWorkerDataInput.Name = "gbWorkerDataInput";
+            this.gbWorkerDataInput.Size = new System.Drawing.Size(304, 466);
+            this.gbWorkerDataInput.TabIndex = 16;
+            this.gbWorkerDataInput.TabStop = false;
+            this.gbWorkerDataInput.Text = "Nhập thông tin nhân viên";
+            this.gbWorkerDataInput.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // ColWorkerName
+            // lbWorkerName
             // 
-            this.ColWorkerName.HeaderText = "Họ và tên";
-            this.ColWorkerName.Name = "ColWorkerName";
+            this.lbWorkerName.Image = global::KaraManager.Properties.Resources.Name;
+            this.lbWorkerName.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbWorkerName.Location = new System.Drawing.Point(13, 21);
+            this.lbWorkerName.Name = "lbWorkerName";
+            this.lbWorkerName.Size = new System.Drawing.Size(90, 34);
+            this.lbWorkerName.TabIndex = 0;
+            this.lbWorkerName.Text = "Họ và tên";
+            this.lbWorkerName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // ColWorkerGender
+            // lbWorkerID
             // 
-            this.ColWorkerGender.HeaderText = "Giới tính";
-            this.ColWorkerGender.Name = "ColWorkerGender";
+            this.lbWorkerID.Image = global::KaraManager.Properties.Resources.ID;
+            this.lbWorkerID.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbWorkerID.Location = new System.Drawing.Point(13, 77);
+            this.lbWorkerID.Name = "lbWorkerID";
+            this.lbWorkerID.Size = new System.Drawing.Size(78, 35);
+            this.lbWorkerID.TabIndex = 1;
+            this.lbWorkerID.Text = "Mã số";
+            this.lbWorkerID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // ColWorkerDateOfBirth
+            // lbWorkerAddress
             // 
-            this.ColWorkerDateOfBirth.HeaderText = "Ngày sinh";
-            this.ColWorkerDateOfBirth.Name = "ColWorkerDateOfBirth";
+            this.lbWorkerAddress.Image = global::KaraManager.Properties.Resources.Address;
+            this.lbWorkerAddress.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbWorkerAddress.Location = new System.Drawing.Point(13, 271);
+            this.lbWorkerAddress.Name = "lbWorkerAddress";
+            this.lbWorkerAddress.Size = new System.Drawing.Size(82, 41);
+            this.lbWorkerAddress.TabIndex = 2;
+            this.lbWorkerAddress.Text = "Địa chỉ";
+            this.lbWorkerAddress.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // ColWorkerAddress
+            // lbWorkerPhoneNumber
             // 
-            this.ColWorkerAddress.HeaderText = "Địa chỉ";
-            this.ColWorkerAddress.Name = "ColWorkerAddress";
+            this.lbWorkerPhoneNumber.Image = global::KaraManager.Properties.Resources.PhoneNumber;
+            this.lbWorkerPhoneNumber.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbWorkerPhoneNumber.Location = new System.Drawing.Point(13, 331);
+            this.lbWorkerPhoneNumber.Name = "lbWorkerPhoneNumber";
+            this.lbWorkerPhoneNumber.Size = new System.Drawing.Size(95, 34);
+            this.lbWorkerPhoneNumber.TabIndex = 3;
+            this.lbWorkerPhoneNumber.Text = "Điện thoại";
+            this.lbWorkerPhoneNumber.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // ColWorkerPhoneNumber
+            // lbWorkerDateOfBirth
             // 
-            this.ColWorkerPhoneNumber.HeaderText = "Số điện thoại";
-            this.ColWorkerPhoneNumber.Name = "ColWorkerPhoneNumber";
+            this.lbWorkerDateOfBirth.Image = global::KaraManager.Properties.Resources.Birthday;
+            this.lbWorkerDateOfBirth.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbWorkerDateOfBirth.Location = new System.Drawing.Point(13, 213);
+            this.lbWorkerDateOfBirth.Name = "lbWorkerDateOfBirth";
+            this.lbWorkerDateOfBirth.Size = new System.Drawing.Size(94, 39);
+            this.lbWorkerDateOfBirth.TabIndex = 4;
+            this.lbWorkerDateOfBirth.Text = "Ngày sinh";
+            this.lbWorkerDateOfBirth.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(9, 51);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(289, 23);
+            this.textBox1.TabIndex = 5;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(9, 105);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(289, 23);
+            this.textBox2.TabIndex = 6;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(9, 359);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(289, 23);
+            this.textBox3.TabIndex = 7;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(9, 305);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(289, 23);
+            this.textBox4.TabIndex = 8;
+            // 
+            // gbWorkerGender
+            // 
+            this.gbWorkerGender.Controls.Add(this.rbtnWorkerFemale);
+            this.gbWorkerGender.Controls.Add(this.rbtnWorkerMale);
+            this.gbWorkerGender.Location = new System.Drawing.Point(9, 147);
+            this.gbWorkerGender.Name = "gbWorkerGender";
+            this.gbWorkerGender.Size = new System.Drawing.Size(289, 63);
+            this.gbWorkerGender.TabIndex = 9;
+            this.gbWorkerGender.TabStop = false;
+            this.gbWorkerGender.Text = "Giới tính";
+            // 
+            // rbtnWorkerMale
+            // 
+            this.rbtnWorkerMale.Image = global::KaraManager.Properties.Resources.Male;
+            this.rbtnWorkerMale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtnWorkerMale.Location = new System.Drawing.Point(47, 22);
+            this.rbtnWorkerMale.Name = "rbtnWorkerMale";
+            this.rbtnWorkerMale.Size = new System.Drawing.Size(75, 26);
+            this.rbtnWorkerMale.TabIndex = 0;
+            this.rbtnWorkerMale.TabStop = true;
+            this.rbtnWorkerMale.Text = "Nam";
+            this.rbtnWorkerMale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rbtnWorkerMale.UseVisualStyleBackColor = true;
+            // 
+            // rbtnWorkerFemale
+            // 
+            this.rbtnWorkerFemale.Image = global::KaraManager.Properties.Resources.Female;
+            this.rbtnWorkerFemale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtnWorkerFemale.Location = new System.Drawing.Point(170, 22);
+            this.rbtnWorkerFemale.Name = "rbtnWorkerFemale";
+            this.rbtnWorkerFemale.Size = new System.Drawing.Size(66, 26);
+            this.rbtnWorkerFemale.TabIndex = 1;
+            this.rbtnWorkerFemale.TabStop = true;
+            this.rbtnWorkerFemale.Text = "Nữ";
+            this.rbtnWorkerFemale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rbtnWorkerFemale.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(9, 245);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(289, 23);
+            this.dateTimePicker1.TabIndex = 10;
+            // 
+            // btnWorkerDataSave
+            // 
+            this.btnWorkerDataSave.Image = global::KaraManager.Properties.Resources.Tick;
+            this.btnWorkerDataSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnWorkerDataSave.Location = new System.Drawing.Point(85, 402);
+            this.btnWorkerDataSave.Name = "btnWorkerDataSave";
+            this.btnWorkerDataSave.Size = new System.Drawing.Size(131, 44);
+            this.btnWorkerDataSave.TabIndex = 11;
+            this.btnWorkerDataSave.Text = "Lưu danh sách";
+            this.btnWorkerDataSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnWorkerDataSave.UseVisualStyleBackColor = true;
             // 
             // FormQLNhanVien
             // 
             this.ClientSize = new System.Drawing.Size(920, 473);
             this.Controls.Add(this.splitContainer2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FormQLNhanVien";
             this.Text = "Quản Lý Thông Tin Nhân Viên";
             this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel1.PerformLayout();
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            this.gbWorkerGender.ResumeLayout(false);
-            this.gbWorkerGender.PerformLayout();
             this.gbWorkerDataList.ResumeLayout(false);
             this.gbWorkerDataList.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkerData)).EndInit();
             this.tSWorkerData.ResumeLayout(false);
             this.tSWorkerData.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkerData)).EndInit();
+            this.gbWorkerDataInput.ResumeLayout(false);
+            this.gbWorkerDataInput.PerformLayout();
+            this.gbWorkerGender.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.SplitContainer splitContainer1;
+
         private System.Windows.Forms.SplitContainer splitContainer2;
-        private System.Windows.Forms.Label lbAddress;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label lbDateOfBirth;
-        private System.Windows.Forms.GroupBox gbWorkerGender;
-        private System.Windows.Forms.RadioButton rbtnWorkerFemale;
-        private System.Windows.Forms.RadioButton rbtnWorkerMale;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label lbWorkerID;
-        private System.Windows.Forms.Label lbWorkerName;
-        private System.Windows.Forms.Label lbWorker;
-        private System.Windows.Forms.Button btnSaveDataWorker;
-        private System.Windows.Forms.Label lbPhoneNumber;
         private System.Windows.Forms.GroupBox gbWorkerDataList;
         private System.Windows.Forms.ToolStrip tSWorkerData;
         private System.Windows.Forms.ToolStripButton tSAddWorkerData;
@@ -416,6 +402,21 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColWorkerDateOfBirth;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColWorkerAddress;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColWorkerPhoneNumber;
+        private System.Windows.Forms.GroupBox gbWorkerDataInput;
+        private System.Windows.Forms.Label lbWorkerDateOfBirth;
+        private System.Windows.Forms.Label lbWorkerPhoneNumber;
+        private System.Windows.Forms.Label lbWorkerAddress;
+        private System.Windows.Forms.Label lbWorkerID;
+        private System.Windows.Forms.Label lbWorkerName;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.GroupBox gbWorkerGender;
+        private System.Windows.Forms.RadioButton rbtnWorkerFemale;
+        private System.Windows.Forms.RadioButton rbtnWorkerMale;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnWorkerDataSave;
 
 
     }

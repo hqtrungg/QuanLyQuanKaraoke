@@ -116,9 +116,9 @@
             this.lbLoginForm.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLoginForm.Image = global::KaraManager.Properties.Resources.User;
             this.lbLoginForm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbLoginForm.Location = new System.Drawing.Point(229, 52);
+            this.lbLoginForm.Location = new System.Drawing.Point(229, 40);
             this.lbLoginForm.Name = "lbLoginForm";
-            this.lbLoginForm.Size = new System.Drawing.Size(138, 19);
+            this.lbLoginForm.Size = new System.Drawing.Size(149, 31);
             this.lbLoginForm.TabIndex = 4;
             this.lbLoginForm.Text = "Tên Đăng Nhập";
             this.lbLoginForm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -138,6 +138,7 @@
             this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.txtPass);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaximizeBox = false;
             this.Name = "FormDangNhap";
             this.Text = "Đăng Nhập";
             ((System.ComponentModel.ISupportInitialize)(this.pBLogin)).EndInit();

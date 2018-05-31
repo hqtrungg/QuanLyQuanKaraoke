@@ -11,7 +11,7 @@ using DevExpress.XtraEditors;
 
 namespace KaraManager.GiaoDien
 {
-    public partial class FormDatPhong : Form
+    public partial class FormDatPhong : DevExpress.XtraEditors.XtraForm
     {
         public FormDatPhong()
         {
