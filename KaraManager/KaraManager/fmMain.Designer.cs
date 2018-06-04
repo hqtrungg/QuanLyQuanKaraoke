@@ -58,11 +58,13 @@
             this.rbPGMonthReport = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btnInformation = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rbSStatus = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.tabShow = new DevExpress.XtraTab.XtraTabControl();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Img1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabShow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -321,20 +323,10 @@
             // 
             // rbSStatus
             // 
-            this.rbSStatus.Location = new System.Drawing.Point(0, 471);
+            this.rbSStatus.Location = new System.Drawing.Point(0, 668);
             this.rbSStatus.Name = "rbSStatus";
             this.rbSStatus.Ribbon = this.ribbonControl1;
             this.rbSStatus.Size = new System.Drawing.Size(1059, 31);
-            // 
-            // tabShow
-            // 
-            this.tabShow.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabShow.Images = this.Img1;
-            this.tabShow.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
-            this.tabShow.Location = new System.Drawing.Point(0, 143);
-            this.tabShow.Name = "tabShow";
-            this.tabShow.Size = new System.Drawing.Size(1059, 328);
-            this.tabShow.TabIndex = 1;
             // 
             // ribbonPageGroup5
             // 
@@ -342,25 +334,44 @@
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "ribbonPageGroup5";
             // 
+            // xtraTabbedMdiManager1
+            // 
+            this.xtraTabbedMdiManager1.MdiParent = this;
+            // 
+            // dockManager1
+            // 
+            this.dockManager1.Form = this;
+            this.dockManager1.TopZIndexControls.AddRange(new string[] {
+            "DevExpress.XtraBars.BarDockControl",
+            "DevExpress.XtraBars.StandaloneBarDockControl",
+            "System.Windows.Forms.StatusBar",
+            "System.Windows.Forms.MenuStrip",
+            "System.Windows.Forms.StatusStrip",
+            "DevExpress.XtraBars.Ribbon.RibbonStatusBar",
+            "DevExpress.XtraBars.Ribbon.RibbonControl",
+            "DevExpress.XtraBars.Navigation.OfficeNavigationBar",
+            "DevExpress.XtraBars.Navigation.TileNavPane"});
+            // 
             // fmMain
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1059, 502);
-            this.Controls.Add(this.tabShow);
+            this.ClientSize = new System.Drawing.Size(1059, 699);
             this.Controls.Add(this.rbSStatus);
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.Name = "fmMain";
             this.Ribbon = this.ribbonControl1;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StatusBar = this.rbSStatus;
             this.Text = "Quản Lý Quán Karaoke";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Img1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabShow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -378,7 +389,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage rbPReport;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rbPGDate;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar rbSStatus;
-        private DevExpress.XtraTab.XtraTabControl tabShow;
         private DevExpress.XtraBars.BarButtonItem btnLogin;
         private DevExpress.XtraBars.BarButtonItem btnRegister;
         private DevExpress.XtraBars.BarButtonItem btnLogOut;
@@ -398,6 +408,8 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage btnInformation;
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
         private DevExpress.Utils.ImageCollection Img1;
+        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private DevExpress.XtraBars.Docking.DockManager dockManager1;
     }
 }
 

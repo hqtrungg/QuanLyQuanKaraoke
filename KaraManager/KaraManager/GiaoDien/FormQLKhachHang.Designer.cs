@@ -53,7 +53,7 @@
             this.ColCustomerDateOfBirth = new DevComponents.DotNetBar.Controls.DataGridViewDateTimeInputColumn();
             this.ColCustomerAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCustomerPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tsCustomerDataList = new System.Windows.Forms.ToolStrip();
             this.tSAddCustomerData = new System.Windows.Forms.ToolStripButton();
             this.tSFixCustomerData = new System.Windows.Forms.ToolStripButton();
             this.tSRemoveCustomerData = new System.Windows.Forms.ToolStripButton();
@@ -67,7 +67,7 @@
             this.gbCustomerGender.SuspendLayout();
             this.gbCustomerDataList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerData)).BeginInit();
-            this.toolStrip1.SuspendLayout();
+            this.tsCustomerDataList.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -254,7 +254,7 @@
             // gbCustomerDataList
             // 
             this.gbCustomerDataList.Controls.Add(this.dgvCustomerData);
-            this.gbCustomerDataList.Controls.Add(this.toolStrip1);
+            this.gbCustomerDataList.Controls.Add(this.tsCustomerDataList);
             this.gbCustomerDataList.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbCustomerDataList.Location = new System.Drawing.Point(3, 3);
             this.gbCustomerDataList.Name = "gbCustomerDataList";
@@ -344,18 +344,20 @@
             this.ColCustomerPhoneNumber.HeaderText = "Số điện thoại";
             this.ColCustomerPhoneNumber.Name = "ColCustomerPhoneNumber";
             // 
-            // toolStrip1
+            // tsCustomerDataList
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsCustomerDataList.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsCustomerDataList.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tSAddCustomerData,
             this.tSFixCustomerData,
             this.tSRemoveCustomerData,
             this.tSReloadCustomerData});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 19);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(601, 33);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
+            this.tsCustomerDataList.Location = new System.Drawing.Point(3, 19);
+            this.tsCustomerDataList.Name = "tsCustomerDataList";
+            this.tsCustomerDataList.Padding = new System.Windows.Forms.Padding(5);
+            this.tsCustomerDataList.Size = new System.Drawing.Size(601, 43);
+            this.tsCustomerDataList.TabIndex = 0;
+            this.tsCustomerDataList.Text = "CustomerList";
             // 
             // tSAddCustomerData
             // 
@@ -363,7 +365,7 @@
             this.tSAddCustomerData.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tSAddCustomerData.Name = "tSAddCustomerData";
             this.tSAddCustomerData.Padding = new System.Windows.Forms.Padding(5);
-            this.tSAddCustomerData.Size = new System.Drawing.Size(133, 30);
+            this.tSAddCustomerData.Size = new System.Drawing.Size(140, 30);
             this.tSAddCustomerData.Text = "Thêm khách hàng";
             // 
             // tSFixCustomerData
@@ -372,7 +374,7 @@
             this.tSFixCustomerData.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tSFixCustomerData.Name = "tSFixCustomerData";
             this.tSFixCustomerData.Padding = new System.Windows.Forms.Padding(5);
-            this.tSFixCustomerData.Size = new System.Drawing.Size(108, 30);
+            this.tSFixCustomerData.Size = new System.Drawing.Size(115, 30);
             this.tSFixCustomerData.Text = "Sửa thông tin";
             // 
             // tSRemoveCustomerData
@@ -380,7 +382,7 @@
             this.tSRemoveCustomerData.Image = global::KaraManager.Properties.Resources.Delete;
             this.tSRemoveCustomerData.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tSRemoveCustomerData.Name = "tSRemoveCustomerData";
-            this.tSRemoveCustomerData.Size = new System.Drawing.Size(112, 30);
+            this.tSRemoveCustomerData.Size = new System.Drawing.Size(119, 30);
             this.tSRemoveCustomerData.Text = "Xóa khách hàng";
             // 
             // tSReloadCustomerData
@@ -389,7 +391,7 @@
             this.tSReloadCustomerData.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tSReloadCustomerData.Name = "tSReloadCustomerData";
             this.tSReloadCustomerData.Padding = new System.Windows.Forms.Padding(5);
-            this.tSReloadCustomerData.Size = new System.Drawing.Size(125, 30);
+            this.tSReloadCustomerData.Size = new System.Drawing.Size(135, 30);
             this.tSReloadCustomerData.Text = "Tải lại danh sách";
             // 
             // FormQLKhachHang
@@ -412,8 +414,8 @@
             this.gbCustomerDataList.ResumeLayout(false);
             this.gbCustomerDataList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerData)).EndInit();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.tsCustomerDataList.ResumeLayout(false);
+            this.tsCustomerDataList.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -439,7 +441,7 @@
         private System.Windows.Forms.GroupBox gbCustomerDataInput;
         private System.Windows.Forms.GroupBox gbCustomerDataList;
         private System.Windows.Forms.DataGridView dgvCustomerData;
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip tsCustomerDataList;
         private System.Windows.Forms.ToolStripButton tSAddCustomerData;
         private System.Windows.Forms.ToolStripButton tSFixCustomerData;
         private System.Windows.Forms.ToolStripButton tSRemoveCustomerData;
@@ -450,5 +452,9 @@
         private DevComponents.DotNetBar.Controls.DataGridViewDateTimeInputColumn ColCustomerDateOfBirth;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColCustomerAddress;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColCustomerPhoneNumber;
+
+        public bool MaximizeBox { get; set; }
+
+        public System.Drawing.Icon Icon { get; set; }
     }
 }

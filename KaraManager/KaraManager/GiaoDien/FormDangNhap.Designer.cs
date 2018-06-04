@@ -57,9 +57,10 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.Lime;
+            this.btnLogin.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnLogin.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(245, 206);
+            this.btnLogin.Location = new System.Drawing.Point(384, 206);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(122, 40);
             this.btnLogin.TabIndex = 1;
@@ -71,7 +72,7 @@
             // 
             this.btnExit.BackColor = System.Drawing.Color.Red;
             this.btnExit.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(498, 206);
+            this.btnExit.Location = new System.Drawing.Point(522, 206);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(124, 40);
             this.btnExit.TabIndex = 2;
@@ -93,7 +94,7 @@
             // pBLogin
             // 
             this.pBLogin.Image = global::KaraManager.Properties.Resources.Login;
-            this.pBLogin.Location = new System.Drawing.Point(45, 40);
+            this.pBLogin.Location = new System.Drawing.Point(39, 40);
             this.pBLogin.Name = "pBLogin";
             this.pBLogin.Size = new System.Drawing.Size(152, 148);
             this.pBLogin.TabIndex = 8;
@@ -114,11 +115,11 @@
             // lbLoginForm
             // 
             this.lbLoginForm.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLoginForm.Image = global::KaraManager.Properties.Resources.User;
+            this.lbLoginForm.Image = global::KaraManager.Properties.Resources.User_Small;
             this.lbLoginForm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbLoginForm.Location = new System.Drawing.Point(229, 40);
+            this.lbLoginForm.Location = new System.Drawing.Point(229, 46);
             this.lbLoginForm.Name = "lbLoginForm";
-            this.lbLoginForm.Size = new System.Drawing.Size(149, 31);
+            this.lbLoginForm.Size = new System.Drawing.Size(138, 31);
             this.lbLoginForm.TabIndex = 4;
             this.lbLoginForm.Text = "Tên Đăng Nhập";
             this.lbLoginForm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -126,8 +127,7 @@
             // FormDangNhap
             // 
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(694, 282);
             this.Controls.Add(this.pBLogin);
             this.Controls.Add(this.cbPasswordShow);

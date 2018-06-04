@@ -30,7 +30,20 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.gbRoomList = new System.Windows.Forms.GroupBox();
+            this.btnRoom2 = new System.Windows.Forms.Button();
+            this.btnRoom3 = new System.Windows.Forms.Button();
+            this.btnRoom4 = new System.Windows.Forms.Button();
+            this.btnRoom5 = new System.Windows.Forms.Button();
+            this.btnRoom6 = new System.Windows.Forms.Button();
+            this.btnRoom7 = new System.Windows.Forms.Button();
+            this.btnRoom8 = new System.Windows.Forms.Button();
+            this.btnRoom9 = new System.Windows.Forms.Button();
+            this.btnRoom10 = new System.Windows.Forms.Button();
+            this.btnRoom11 = new System.Windows.Forms.Button();
+            this.btnRoom12 = new System.Windows.Forms.Button();
+            this.btnRoom1 = new System.Windows.Forms.Button();
             this.gbChosenMenu = new System.Windows.Forms.GroupBox();
+            this.btnChooseMenuReg = new System.Windows.Forms.Button();
             this.fgvChosenMenu = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,11 +51,13 @@
             this.ColCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbMenu = new System.Windows.Forms.GroupBox();
             this.tbTotalMenu = new System.Windows.Forms.TextBox();
+            this.lbTotalReg = new System.Windows.Forms.Label();
             this.dgvMenu = new System.Windows.Forms.DataGridView();
             this.ColFoodID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColFoodName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColFoodPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbBill = new System.Windows.Forms.GroupBox();
+            this.btnTotalCount = new System.Windows.Forms.Button();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -50,6 +65,12 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.lbRoomPriceTotal = new System.Windows.Forms.Label();
+            this.lbFoodTotal = new System.Windows.Forms.Label();
+            this.lbRoomPriceReg = new System.Windows.Forms.Label();
+            this.lbKaraTime = new System.Windows.Forms.Label();
+            this.lbBillDate = new System.Windows.Forms.Label();
+            this.lbBillID = new System.Windows.Forms.Label();
             this.gbRoomRegister = new System.Windows.Forms.GroupBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.datetime = new System.Windows.Forms.DateTimePicker();
@@ -65,27 +86,6 @@
             this.lbRoomCategoryReg = new System.Windows.Forms.Label();
             this.tbRoomIDReg = new System.Windows.Forms.TextBox();
             this.lbRoomIDReg = new System.Windows.Forms.Label();
-            this.btnRoom2 = new System.Windows.Forms.Button();
-            this.btnRoom3 = new System.Windows.Forms.Button();
-            this.btnRoom4 = new System.Windows.Forms.Button();
-            this.btnRoom5 = new System.Windows.Forms.Button();
-            this.btnRoom6 = new System.Windows.Forms.Button();
-            this.btnRoom7 = new System.Windows.Forms.Button();
-            this.btnRoom8 = new System.Windows.Forms.Button();
-            this.btnRoom9 = new System.Windows.Forms.Button();
-            this.btnRoom10 = new System.Windows.Forms.Button();
-            this.btnRoom11 = new System.Windows.Forms.Button();
-            this.btnRoom12 = new System.Windows.Forms.Button();
-            this.btnRoom1 = new System.Windows.Forms.Button();
-            this.btnChooseMenuReg = new System.Windows.Forms.Button();
-            this.lbTotalReg = new System.Windows.Forms.Label();
-            this.btnTotalCount = new System.Windows.Forms.Button();
-            this.lbRoomPriceTotal = new System.Windows.Forms.Label();
-            this.lbFoodTotal = new System.Windows.Forms.Label();
-            this.lbRoomPriceReg = new System.Windows.Forms.Label();
-            this.lbKaraTime = new System.Windows.Forms.Label();
-            this.lbBillDate = new System.Windows.Forms.Label();
-            this.lbBillID = new System.Windows.Forms.Label();
             this.btnReportingReg = new System.Windows.Forms.Button();
             this.btnRoomRegister = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -143,313 +143,6 @@
             this.gbRoomList.TabIndex = 0;
             this.gbRoomList.TabStop = false;
             this.gbRoomList.Text = "Danh sách phòng hát";
-            // 
-            // gbChosenMenu
-            // 
-            this.gbChosenMenu.Controls.Add(this.btnChooseMenuReg);
-            this.gbChosenMenu.Controls.Add(this.fgvChosenMenu);
-            this.gbChosenMenu.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbChosenMenu.Location = new System.Drawing.Point(354, 392);
-            this.gbChosenMenu.Name = "gbChosenMenu";
-            this.gbChosenMenu.Size = new System.Drawing.Size(345, 333);
-            this.gbChosenMenu.TabIndex = 3;
-            this.gbChosenMenu.TabStop = false;
-            this.gbChosenMenu.Text = "Các Món Đã Chọn";
-            // 
-            // fgvChosenMenu
-            // 
-            this.fgvChosenMenu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.fgvChosenMenu.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.fgvChosenMenu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.fgvChosenMenu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.ColCount});
-            this.fgvChosenMenu.Location = new System.Drawing.Point(6, 31);
-            this.fgvChosenMenu.Name = "fgvChosenMenu";
-            this.fgvChosenMenu.Size = new System.Drawing.Size(333, 215);
-            this.fgvChosenMenu.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Tên món ăn";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Đơn giá";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // ColCount
-            // 
-            this.ColCount.HeaderText = "Số lượng";
-            this.ColCount.Name = "ColCount";
-            // 
-            // gbMenu
-            // 
-            this.gbMenu.Controls.Add(this.tbTotalMenu);
-            this.gbMenu.Controls.Add(this.lbTotalReg);
-            this.gbMenu.Controls.Add(this.dgvMenu);
-            this.gbMenu.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbMenu.Location = new System.Drawing.Point(3, 392);
-            this.gbMenu.Name = "gbMenu";
-            this.gbMenu.Size = new System.Drawing.Size(345, 333);
-            this.gbMenu.TabIndex = 2;
-            this.gbMenu.TabStop = false;
-            this.gbMenu.Text = "Thực Đơn";
-            // 
-            // tbTotalMenu
-            // 
-            this.tbTotalMenu.Location = new System.Drawing.Point(207, 273);
-            this.tbTotalMenu.Name = "tbTotalMenu";
-            this.tbTotalMenu.Size = new System.Drawing.Size(100, 23);
-            this.tbTotalMenu.TabIndex = 4;
-            // 
-            // dgvMenu
-            // 
-            this.dgvMenu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvMenu.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvMenu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dgvMenu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColFoodID,
-            this.ColFoodName,
-            this.ColFoodPrice});
-            this.dgvMenu.Location = new System.Drawing.Point(6, 31);
-            this.dgvMenu.Name = "dgvMenu";
-            this.dgvMenu.Size = new System.Drawing.Size(333, 215);
-            this.dgvMenu.TabIndex = 1;
-            // 
-            // ColFoodID
-            // 
-            this.ColFoodID.HeaderText = "ID";
-            this.ColFoodID.Name = "ColFoodID";
-            // 
-            // ColFoodName
-            // 
-            this.ColFoodName.HeaderText = "Tên món ăn";
-            this.ColFoodName.Name = "ColFoodName";
-            // 
-            // ColFoodPrice
-            // 
-            this.ColFoodPrice.HeaderText = "Đơn giá";
-            this.ColFoodPrice.Name = "ColFoodPrice";
-            // 
-            // gbBill
-            // 
-            this.gbBill.Controls.Add(this.btnTotalCount);
-            this.gbBill.Controls.Add(this.textBox12);
-            this.gbBill.Controls.Add(this.dateTimePicker3);
-            this.gbBill.Controls.Add(this.textBox11);
-            this.gbBill.Controls.Add(this.textBox10);
-            this.gbBill.Controls.Add(this.textBox9);
-            this.gbBill.Controls.Add(this.textBox8);
-            this.gbBill.Controls.Add(this.textBox7);
-            this.gbBill.Controls.Add(this.lbRoomPriceTotal);
-            this.gbBill.Controls.Add(this.lbFoodTotal);
-            this.gbBill.Controls.Add(this.lbRoomPriceReg);
-            this.gbBill.Controls.Add(this.lbKaraTime);
-            this.gbBill.Controls.Add(this.lbBillDate);
-            this.gbBill.Controls.Add(this.lbBillID);
-            this.gbBill.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbBill.Location = new System.Drawing.Point(431, 3);
-            this.gbBill.Name = "gbBill";
-            this.gbBill.Size = new System.Drawing.Size(268, 383);
-            this.gbBill.TabIndex = 1;
-            this.gbBill.TabStop = false;
-            this.gbBill.Text = "Hóa Đơn";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(159, 334);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(103, 23);
-            this.textBox12.TabIndex = 29;
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(159, 94);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(103, 23);
-            this.dateTimePicker3.TabIndex = 28;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(159, 276);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(103, 23);
-            this.textBox11.TabIndex = 27;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(159, 231);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(103, 23);
-            this.textBox10.TabIndex = 26;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(159, 187);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(103, 23);
-            this.textBox9.TabIndex = 25;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(159, 141);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(103, 23);
-            this.textBox8.TabIndex = 24;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(159, 50);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(103, 23);
-            this.textBox7.TabIndex = 23;
-            // 
-            // gbRoomRegister
-            // 
-            this.gbRoomRegister.Controls.Add(this.dateTimePicker2);
-            this.gbRoomRegister.Controls.Add(this.datetime);
-            this.gbRoomRegister.Controls.Add(this.tbCustomerNameReg);
-            this.gbRoomRegister.Controls.Add(this.tbCustomerIDReg);
-            this.gbRoomRegister.Controls.Add(this.lbEndTime);
-            this.gbRoomRegister.Controls.Add(this.lbCustomerNameReg);
-            this.gbRoomRegister.Controls.Add(this.lbBeginTime);
-            this.gbRoomRegister.Controls.Add(this.lbCustomerIDReg);
-            this.gbRoomRegister.Controls.Add(this.tbRoomCatReg);
-            this.gbRoomRegister.Controls.Add(this.tbRoomNameReg);
-            this.gbRoomRegister.Controls.Add(this.lbRoomNameReg);
-            this.gbRoomRegister.Controls.Add(this.lbRoomCategoryReg);
-            this.gbRoomRegister.Controls.Add(this.tbRoomIDReg);
-            this.gbRoomRegister.Controls.Add(this.lbRoomIDReg);
-            this.gbRoomRegister.Controls.Add(this.btnReportingReg);
-            this.gbRoomRegister.Controls.Add(this.btnRoomRegister);
-            this.gbRoomRegister.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbRoomRegister.Location = new System.Drawing.Point(3, 3);
-            this.gbRoomRegister.Name = "gbRoomRegister";
-            this.gbRoomRegister.Size = new System.Drawing.Size(422, 383);
-            this.gbRoomRegister.TabIndex = 0;
-            this.gbRoomRegister.TabStop = false;
-            this.gbRoomRegister.Text = "Đặt phòng";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(144, 249);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(253, 23);
-            this.dateTimePicker2.TabIndex = 35;
-            // 
-            // datetime
-            // 
-            this.datetime.Location = new System.Drawing.Point(144, 210);
-            this.datetime.Name = "datetime";
-            this.datetime.Size = new System.Drawing.Size(253, 23);
-            this.datetime.TabIndex = 34;
-            // 
-            // tbCustomerNameReg
-            // 
-            this.tbCustomerNameReg.Location = new System.Drawing.Point(143, 173);
-            this.tbCustomerNameReg.Name = "tbCustomerNameReg";
-            this.tbCustomerNameReg.Size = new System.Drawing.Size(254, 23);
-            this.tbCustomerNameReg.TabIndex = 33;
-            // 
-            // tbCustomerIDReg
-            // 
-            this.tbCustomerIDReg.Location = new System.Drawing.Point(143, 132);
-            this.tbCustomerIDReg.Name = "tbCustomerIDReg";
-            this.tbCustomerIDReg.Size = new System.Drawing.Size(254, 23);
-            this.tbCustomerIDReg.TabIndex = 32;
-            // 
-            // lbEndTime
-            // 
-            this.lbEndTime.AutoSize = true;
-            this.lbEndTime.Location = new System.Drawing.Point(26, 254);
-            this.lbEndTime.Name = "lbEndTime";
-            this.lbEndTime.Size = new System.Drawing.Size(110, 16);
-            this.lbEndTime.TabIndex = 31;
-            this.lbEndTime.Text = "Thời gian kết thúc";
-            // 
-            // lbCustomerNameReg
-            // 
-            this.lbCustomerNameReg.AutoSize = true;
-            this.lbCustomerNameReg.Location = new System.Drawing.Point(26, 176);
-            this.lbCustomerNameReg.Name = "lbCustomerNameReg";
-            this.lbCustomerNameReg.Size = new System.Drawing.Size(99, 16);
-            this.lbCustomerNameReg.TabIndex = 30;
-            this.lbCustomerNameReg.Text = "Tên khách hàng";
-            // 
-            // lbBeginTime
-            // 
-            this.lbBeginTime.AutoSize = true;
-            this.lbBeginTime.Location = new System.Drawing.Point(26, 215);
-            this.lbBeginTime.Name = "lbBeginTime";
-            this.lbBeginTime.Size = new System.Drawing.Size(108, 16);
-            this.lbBeginTime.TabIndex = 29;
-            this.lbBeginTime.Text = "Thời gian bắt đầu";
-            // 
-            // lbCustomerIDReg
-            // 
-            this.lbCustomerIDReg.AutoSize = true;
-            this.lbCustomerIDReg.Location = new System.Drawing.Point(26, 135);
-            this.lbCustomerIDReg.Name = "lbCustomerIDReg";
-            this.lbCustomerIDReg.Size = new System.Drawing.Size(111, 16);
-            this.lbCustomerIDReg.TabIndex = 28;
-            this.lbCustomerIDReg.Text = "Mã số khách hàng";
-            // 
-            // tbRoomCatReg
-            // 
-            this.tbRoomCatReg.Location = new System.Drawing.Point(313, 34);
-            this.tbRoomCatReg.Name = "tbRoomCatReg";
-            this.tbRoomCatReg.Size = new System.Drawing.Size(84, 23);
-            this.tbRoomCatReg.TabIndex = 27;
-            // 
-            // tbRoomNameReg
-            // 
-            this.tbRoomNameReg.Location = new System.Drawing.Point(103, 75);
-            this.tbRoomNameReg.Name = "tbRoomNameReg";
-            this.tbRoomNameReg.Size = new System.Drawing.Size(113, 23);
-            this.tbRoomNameReg.TabIndex = 26;
-            // 
-            // lbRoomNameReg
-            // 
-            this.lbRoomNameReg.AutoSize = true;
-            this.lbRoomNameReg.Location = new System.Drawing.Point(26, 78);
-            this.lbRoomNameReg.Name = "lbRoomNameReg";
-            this.lbRoomNameReg.Size = new System.Drawing.Size(69, 16);
-            this.lbRoomNameReg.TabIndex = 25;
-            this.lbRoomNameReg.Text = "Tên phòng";
-            // 
-            // lbRoomCategoryReg
-            // 
-            this.lbRoomCategoryReg.AutoSize = true;
-            this.lbRoomCategoryReg.Location = new System.Drawing.Point(237, 37);
-            this.lbRoomCategoryReg.Name = "lbRoomCategoryReg";
-            this.lbRoomCategoryReg.Size = new System.Drawing.Size(70, 16);
-            this.lbRoomCategoryReg.TabIndex = 24;
-            this.lbRoomCategoryReg.Text = "Loại phòng";
-            // 
-            // tbRoomIDReg
-            // 
-            this.tbRoomIDReg.Location = new System.Drawing.Point(103, 34);
-            this.tbRoomIDReg.Name = "tbRoomIDReg";
-            this.tbRoomIDReg.Size = new System.Drawing.Size(113, 23);
-            this.tbRoomIDReg.TabIndex = 23;
-            // 
-            // lbRoomIDReg
-            // 
-            this.lbRoomIDReg.AutoSize = true;
-            this.lbRoomIDReg.Location = new System.Drawing.Point(26, 37);
-            this.lbRoomIDReg.Name = "lbRoomIDReg";
-            this.lbRoomIDReg.Size = new System.Drawing.Size(59, 16);
-            this.lbRoomIDReg.TabIndex = 22;
-            this.lbRoomIDReg.Text = "ID Phòng";
             // 
             // btnRoom2
             // 
@@ -619,6 +312,18 @@
             this.btnRoom1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnRoom1.UseVisualStyleBackColor = true;
             // 
+            // gbChosenMenu
+            // 
+            this.gbChosenMenu.Controls.Add(this.btnChooseMenuReg);
+            this.gbChosenMenu.Controls.Add(this.fgvChosenMenu);
+            this.gbChosenMenu.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbChosenMenu.Location = new System.Drawing.Point(354, 392);
+            this.gbChosenMenu.Name = "gbChosenMenu";
+            this.gbChosenMenu.Size = new System.Drawing.Size(345, 333);
+            this.gbChosenMenu.TabIndex = 3;
+            this.gbChosenMenu.TabStop = false;
+            this.gbChosenMenu.Text = "Các Món Đã Chọn";
+            // 
             // btnChooseMenuReg
             // 
             this.btnChooseMenuReg.Image = global::KaraManager.Properties.Resources.Tick;
@@ -631,6 +336,61 @@
             this.btnChooseMenuReg.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnChooseMenuReg.UseVisualStyleBackColor = true;
             // 
+            // fgvChosenMenu
+            // 
+            this.fgvChosenMenu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.fgvChosenMenu.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.fgvChosenMenu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.fgvChosenMenu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.ColCount});
+            this.fgvChosenMenu.Location = new System.Drawing.Point(6, 31);
+            this.fgvChosenMenu.Name = "fgvChosenMenu";
+            this.fgvChosenMenu.Size = new System.Drawing.Size(333, 215);
+            this.fgvChosenMenu.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Tên món ăn";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Đơn giá";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // ColCount
+            // 
+            this.ColCount.HeaderText = "Số lượng";
+            this.ColCount.Name = "ColCount";
+            // 
+            // gbMenu
+            // 
+            this.gbMenu.Controls.Add(this.tbTotalMenu);
+            this.gbMenu.Controls.Add(this.lbTotalReg);
+            this.gbMenu.Controls.Add(this.dgvMenu);
+            this.gbMenu.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbMenu.Location = new System.Drawing.Point(3, 392);
+            this.gbMenu.Name = "gbMenu";
+            this.gbMenu.Size = new System.Drawing.Size(345, 333);
+            this.gbMenu.TabIndex = 2;
+            this.gbMenu.TabStop = false;
+            this.gbMenu.Text = "Thực Đơn";
+            // 
+            // tbTotalMenu
+            // 
+            this.tbTotalMenu.Location = new System.Drawing.Point(207, 273);
+            this.tbTotalMenu.Name = "tbTotalMenu";
+            this.tbTotalMenu.Size = new System.Drawing.Size(100, 23);
+            this.tbTotalMenu.TabIndex = 4;
+            // 
             // lbTotalReg
             // 
             this.lbTotalReg.Image = global::KaraManager.Properties.Resources.Money;
@@ -641,6 +401,60 @@
             this.lbTotalReg.TabIndex = 3;
             this.lbTotalReg.Text = "Tổng tiền";
             this.lbTotalReg.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // dgvMenu
+            // 
+            this.dgvMenu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMenu.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvMenu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMenu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColFoodID,
+            this.ColFoodName,
+            this.ColFoodPrice});
+            this.dgvMenu.Location = new System.Drawing.Point(6, 31);
+            this.dgvMenu.Name = "dgvMenu";
+            this.dgvMenu.Size = new System.Drawing.Size(333, 215);
+            this.dgvMenu.TabIndex = 1;
+            // 
+            // ColFoodID
+            // 
+            this.ColFoodID.HeaderText = "ID";
+            this.ColFoodID.Name = "ColFoodID";
+            // 
+            // ColFoodName
+            // 
+            this.ColFoodName.HeaderText = "Tên món ăn";
+            this.ColFoodName.Name = "ColFoodName";
+            // 
+            // ColFoodPrice
+            // 
+            this.ColFoodPrice.HeaderText = "Đơn giá";
+            this.ColFoodPrice.Name = "ColFoodPrice";
+            // 
+            // gbBill
+            // 
+            this.gbBill.Controls.Add(this.btnTotalCount);
+            this.gbBill.Controls.Add(this.textBox12);
+            this.gbBill.Controls.Add(this.dateTimePicker3);
+            this.gbBill.Controls.Add(this.textBox11);
+            this.gbBill.Controls.Add(this.textBox10);
+            this.gbBill.Controls.Add(this.textBox9);
+            this.gbBill.Controls.Add(this.textBox8);
+            this.gbBill.Controls.Add(this.textBox7);
+            this.gbBill.Controls.Add(this.lbRoomPriceTotal);
+            this.gbBill.Controls.Add(this.lbFoodTotal);
+            this.gbBill.Controls.Add(this.lbRoomPriceReg);
+            this.gbBill.Controls.Add(this.lbKaraTime);
+            this.gbBill.Controls.Add(this.lbBillDate);
+            this.gbBill.Controls.Add(this.lbBillID);
+            this.gbBill.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbBill.Location = new System.Drawing.Point(431, 3);
+            this.gbBill.Name = "gbBill";
+            this.gbBill.Size = new System.Drawing.Size(268, 383);
+            this.gbBill.TabIndex = 1;
+            this.gbBill.TabStop = false;
+            this.gbBill.Text = "Hóa Đơn";
             // 
             // btnTotalCount
             // 
@@ -653,6 +467,55 @@
             this.btnTotalCount.Text = "Tổng tiền";
             this.btnTotalCount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTotalCount.UseVisualStyleBackColor = true;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(159, 334);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(103, 23);
+            this.textBox12.TabIndex = 29;
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Location = new System.Drawing.Point(159, 94);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(103, 23);
+            this.dateTimePicker3.TabIndex = 28;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(159, 276);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(103, 23);
+            this.textBox11.TabIndex = 27;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(159, 231);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(103, 23);
+            this.textBox10.TabIndex = 26;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(159, 187);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(103, 23);
+            this.textBox9.TabIndex = 25;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(159, 141);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(103, 23);
+            this.textBox8.TabIndex = 24;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(159, 50);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(103, 23);
+            this.textBox7.TabIndex = 23;
             // 
             // lbRoomPriceTotal
             // 
@@ -719,6 +582,144 @@
             this.lbBillID.TabIndex = 16;
             this.lbBillID.Text = "Mã hóa đơn";
             this.lbBillID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // gbRoomRegister
+            // 
+            this.gbRoomRegister.Controls.Add(this.dateTimePicker2);
+            this.gbRoomRegister.Controls.Add(this.datetime);
+            this.gbRoomRegister.Controls.Add(this.tbCustomerNameReg);
+            this.gbRoomRegister.Controls.Add(this.tbCustomerIDReg);
+            this.gbRoomRegister.Controls.Add(this.lbEndTime);
+            this.gbRoomRegister.Controls.Add(this.lbCustomerNameReg);
+            this.gbRoomRegister.Controls.Add(this.lbBeginTime);
+            this.gbRoomRegister.Controls.Add(this.lbCustomerIDReg);
+            this.gbRoomRegister.Controls.Add(this.tbRoomCatReg);
+            this.gbRoomRegister.Controls.Add(this.tbRoomNameReg);
+            this.gbRoomRegister.Controls.Add(this.lbRoomNameReg);
+            this.gbRoomRegister.Controls.Add(this.lbRoomCategoryReg);
+            this.gbRoomRegister.Controls.Add(this.tbRoomIDReg);
+            this.gbRoomRegister.Controls.Add(this.lbRoomIDReg);
+            this.gbRoomRegister.Controls.Add(this.btnReportingReg);
+            this.gbRoomRegister.Controls.Add(this.btnRoomRegister);
+            this.gbRoomRegister.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbRoomRegister.Location = new System.Drawing.Point(3, 3);
+            this.gbRoomRegister.Name = "gbRoomRegister";
+            this.gbRoomRegister.Size = new System.Drawing.Size(422, 383);
+            this.gbRoomRegister.TabIndex = 0;
+            this.gbRoomRegister.TabStop = false;
+            this.gbRoomRegister.Text = "Đặt phòng";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(144, 249);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(253, 23);
+            this.dateTimePicker2.TabIndex = 35;
+            // 
+            // datetime
+            // 
+            this.datetime.Location = new System.Drawing.Point(144, 210);
+            this.datetime.Name = "datetime";
+            this.datetime.Size = new System.Drawing.Size(253, 23);
+            this.datetime.TabIndex = 34;
+            // 
+            // tbCustomerNameReg
+            // 
+            this.tbCustomerNameReg.Location = new System.Drawing.Point(143, 173);
+            this.tbCustomerNameReg.Name = "tbCustomerNameReg";
+            this.tbCustomerNameReg.Size = new System.Drawing.Size(254, 23);
+            this.tbCustomerNameReg.TabIndex = 33;
+            // 
+            // tbCustomerIDReg
+            // 
+            this.tbCustomerIDReg.Location = new System.Drawing.Point(143, 132);
+            this.tbCustomerIDReg.Name = "tbCustomerIDReg";
+            this.tbCustomerIDReg.Size = new System.Drawing.Size(254, 23);
+            this.tbCustomerIDReg.TabIndex = 32;
+            // 
+            // lbEndTime
+            // 
+            this.lbEndTime.AutoSize = true;
+            this.lbEndTime.Location = new System.Drawing.Point(26, 254);
+            this.lbEndTime.Name = "lbEndTime";
+            this.lbEndTime.Size = new System.Drawing.Size(110, 16);
+            this.lbEndTime.TabIndex = 31;
+            this.lbEndTime.Text = "Thời gian kết thúc";
+            // 
+            // lbCustomerNameReg
+            // 
+            this.lbCustomerNameReg.AutoSize = true;
+            this.lbCustomerNameReg.Location = new System.Drawing.Point(26, 176);
+            this.lbCustomerNameReg.Name = "lbCustomerNameReg";
+            this.lbCustomerNameReg.Size = new System.Drawing.Size(99, 16);
+            this.lbCustomerNameReg.TabIndex = 30;
+            this.lbCustomerNameReg.Text = "Tên khách hàng";
+            // 
+            // lbBeginTime
+            // 
+            this.lbBeginTime.AutoSize = true;
+            this.lbBeginTime.Location = new System.Drawing.Point(26, 215);
+            this.lbBeginTime.Name = "lbBeginTime";
+            this.lbBeginTime.Size = new System.Drawing.Size(108, 16);
+            this.lbBeginTime.TabIndex = 29;
+            this.lbBeginTime.Text = "Thời gian bắt đầu";
+            // 
+            // lbCustomerIDReg
+            // 
+            this.lbCustomerIDReg.AutoSize = true;
+            this.lbCustomerIDReg.Location = new System.Drawing.Point(26, 135);
+            this.lbCustomerIDReg.Name = "lbCustomerIDReg";
+            this.lbCustomerIDReg.Size = new System.Drawing.Size(111, 16);
+            this.lbCustomerIDReg.TabIndex = 28;
+            this.lbCustomerIDReg.Text = "Mã số khách hàng";
+            // 
+            // tbRoomCatReg
+            // 
+            this.tbRoomCatReg.Location = new System.Drawing.Point(313, 34);
+            this.tbRoomCatReg.Name = "tbRoomCatReg";
+            this.tbRoomCatReg.Size = new System.Drawing.Size(84, 23);
+            this.tbRoomCatReg.TabIndex = 27;
+            // 
+            // tbRoomNameReg
+            // 
+            this.tbRoomNameReg.Location = new System.Drawing.Point(103, 75);
+            this.tbRoomNameReg.Name = "tbRoomNameReg";
+            this.tbRoomNameReg.Size = new System.Drawing.Size(113, 23);
+            this.tbRoomNameReg.TabIndex = 26;
+            // 
+            // lbRoomNameReg
+            // 
+            this.lbRoomNameReg.AutoSize = true;
+            this.lbRoomNameReg.Location = new System.Drawing.Point(26, 78);
+            this.lbRoomNameReg.Name = "lbRoomNameReg";
+            this.lbRoomNameReg.Size = new System.Drawing.Size(69, 16);
+            this.lbRoomNameReg.TabIndex = 25;
+            this.lbRoomNameReg.Text = "Tên phòng";
+            // 
+            // lbRoomCategoryReg
+            // 
+            this.lbRoomCategoryReg.AutoSize = true;
+            this.lbRoomCategoryReg.Location = new System.Drawing.Point(237, 37);
+            this.lbRoomCategoryReg.Name = "lbRoomCategoryReg";
+            this.lbRoomCategoryReg.Size = new System.Drawing.Size(70, 16);
+            this.lbRoomCategoryReg.TabIndex = 24;
+            this.lbRoomCategoryReg.Text = "Loại phòng";
+            // 
+            // tbRoomIDReg
+            // 
+            this.tbRoomIDReg.Location = new System.Drawing.Point(103, 34);
+            this.tbRoomIDReg.Name = "tbRoomIDReg";
+            this.tbRoomIDReg.Size = new System.Drawing.Size(113, 23);
+            this.tbRoomIDReg.TabIndex = 23;
+            // 
+            // lbRoomIDReg
+            // 
+            this.lbRoomIDReg.AutoSize = true;
+            this.lbRoomIDReg.Location = new System.Drawing.Point(26, 37);
+            this.lbRoomIDReg.Name = "lbRoomIDReg";
+            this.lbRoomIDReg.Size = new System.Drawing.Size(59, 16);
+            this.lbRoomIDReg.TabIndex = 22;
+            this.lbRoomIDReg.Text = "ID Phòng";
             // 
             // btnReportingReg
             // 

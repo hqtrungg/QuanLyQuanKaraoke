@@ -13,6 +13,7 @@ namespace KaraManager.GiaoDien
 {
     public partial class UCFormDatPhong : DevExpress.XtraEditors.XtraUserControl
     {
+        
         public UCFormDatPhong()
         {
             InitializeComponent();

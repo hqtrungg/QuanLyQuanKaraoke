@@ -42,25 +42,25 @@
             this.lbRoomStatus = new System.Windows.Forms.Label();
             this.lbRoomID = new System.Windows.Forms.Label();
             this.gbRoomDataList = new System.Windows.Forms.GroupBox();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tSAddRoomData = new System.Windows.Forms.ToolStripButton();
-            this.tSFixRoomData = new System.Windows.Forms.ToolStripButton();
-            this.tSRemoveRoomData = new System.Windows.Forms.ToolStripButton();
-            this.tSReloadRoomData = new System.Windows.Forms.ToolStripButton();
             this.dgvRoomData = new System.Windows.Forms.DataGridView();
             this.ColID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColRoomName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColRoomCat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColRoomStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColRoomArea = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tsRoomDataList = new System.Windows.Forms.ToolStrip();
+            this.tSAddRoomData = new System.Windows.Forms.ToolStripButton();
+            this.tSFixRoomData = new System.Windows.Forms.ToolStripButton();
+            this.tSRemoveRoomData = new System.Windows.Forms.ToolStripButton();
+            this.tSReloadRoomData = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.gbRoomDataInput.SuspendLayout();
             this.gbRoomDataList.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRoomData)).BeginInit();
+            this.tsRoomDataList.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -210,7 +210,7 @@
             // gbRoomDataList
             // 
             this.gbRoomDataList.Controls.Add(this.dgvRoomData);
-            this.gbRoomDataList.Controls.Add(this.toolStrip1);
+            this.gbRoomDataList.Controls.Add(this.tsRoomDataList);
             this.gbRoomDataList.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbRoomDataList.Location = new System.Drawing.Point(3, 3);
             this.gbRoomDataList.Name = "gbRoomDataList";
@@ -219,18 +219,61 @@
             this.gbRoomDataList.TabStop = false;
             this.gbRoomDataList.Text = "Danh sách phòng hát";
             // 
-            // toolStrip1
+            // dgvRoomData
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dgvRoomData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvRoomData.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvRoomData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColID,
+            this.ColRoomName,
+            this.ColRoomCat,
+            this.ColRoomStatus,
+            this.ColRoomArea});
+            this.dgvRoomData.Location = new System.Drawing.Point(3, 61);
+            this.dgvRoomData.Name = "dgvRoomData";
+            this.dgvRoomData.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvRoomData.Size = new System.Drawing.Size(690, 661);
+            this.dgvRoomData.TabIndex = 2;
+            // 
+            // ColID
+            // 
+            this.ColID.HeaderText = "ID";
+            this.ColID.Name = "ColID";
+            // 
+            // ColRoomName
+            // 
+            this.ColRoomName.HeaderText = "Tên Phòng";
+            this.ColRoomName.Name = "ColRoomName";
+            // 
+            // ColRoomCat
+            // 
+            this.ColRoomCat.HeaderText = "Loại Phòng";
+            this.ColRoomCat.Name = "ColRoomCat";
+            // 
+            // ColRoomStatus
+            // 
+            this.ColRoomStatus.HeaderText = "Tình Trạng";
+            this.ColRoomStatus.Name = "ColRoomStatus";
+            // 
+            // ColRoomArea
+            // 
+            this.ColRoomArea.HeaderText = "Khu vực";
+            this.ColRoomArea.Name = "ColRoomArea";
+            // 
+            // tsRoomDataList
+            // 
+            this.tsRoomDataList.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsRoomDataList.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tSAddRoomData,
             this.tSFixRoomData,
             this.tSRemoveRoomData,
             this.tSReloadRoomData});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 19);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(690, 34);
-            this.toolStrip1.TabIndex = 1;
-            this.toolStrip1.Text = "toolStrip1";
+            this.tsRoomDataList.Location = new System.Drawing.Point(3, 19);
+            this.tsRoomDataList.Name = "tsRoomDataList";
+            this.tsRoomDataList.Padding = new System.Windows.Forms.Padding(5);
+            this.tsRoomDataList.Size = new System.Drawing.Size(690, 44);
+            this.tsRoomDataList.TabIndex = 1;
+            this.tsRoomDataList.Text = "RoomList";
             // 
             // tSAddRoomData
             // 
@@ -276,47 +319,6 @@
             this.tSReloadRoomData.Size = new System.Drawing.Size(135, 31);
             this.tSReloadRoomData.Text = "Tải lại danh sách";
             // 
-            // dgvRoomData
-            // 
-            this.dgvRoomData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvRoomData.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvRoomData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColID,
-            this.ColRoomName,
-            this.ColRoomCat,
-            this.ColRoomStatus,
-            this.ColRoomArea});
-            this.dgvRoomData.Location = new System.Drawing.Point(3, 53);
-            this.dgvRoomData.Name = "dgvRoomData";
-            this.dgvRoomData.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dgvRoomData.Size = new System.Drawing.Size(690, 669);
-            this.dgvRoomData.TabIndex = 2;
-            // 
-            // ColID
-            // 
-            this.ColID.HeaderText = "ID";
-            this.ColID.Name = "ColID";
-            // 
-            // ColRoomName
-            // 
-            this.ColRoomName.HeaderText = "Tên Phòng";
-            this.ColRoomName.Name = "ColRoomName";
-            // 
-            // ColRoomCat
-            // 
-            this.ColRoomCat.HeaderText = "Loại Phòng";
-            this.ColRoomCat.Name = "ColRoomCat";
-            // 
-            // ColRoomStatus
-            // 
-            this.ColRoomStatus.HeaderText = "Tình Trạng";
-            this.ColRoomStatus.Name = "ColRoomStatus";
-            // 
-            // ColRoomArea
-            // 
-            this.ColRoomArea.HeaderText = "Khu vực";
-            this.ColRoomArea.Name = "ColRoomArea";
-            // 
             // UCFormQLPhongHat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -332,9 +334,9 @@
             this.gbRoomDataInput.PerformLayout();
             this.gbRoomDataList.ResumeLayout(false);
             this.gbRoomDataList.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRoomData)).EndInit();
+            this.tsRoomDataList.ResumeLayout(false);
+            this.tsRoomDataList.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -355,7 +357,7 @@
         private System.Windows.Forms.Label lbRoomStatus;
         private System.Windows.Forms.Label lbRoomID;
         private System.Windows.Forms.GroupBox gbRoomDataList;
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip tsRoomDataList;
         private System.Windows.Forms.ToolStripButton tSAddRoomData;
         private System.Windows.Forms.ToolStripButton tSFixRoomData;
         private System.Windows.Forms.ToolStripButton tSRemoveRoomData;

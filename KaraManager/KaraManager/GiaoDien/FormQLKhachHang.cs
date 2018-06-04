@@ -13,6 +13,7 @@ namespace KaraManager.GiaoDien
 {
     public partial class FormQLKhachHang : DevExpress.XtraEditors.XtraForm
     {
+  
         public FormQLKhachHang()
         {
             InitializeComponent();

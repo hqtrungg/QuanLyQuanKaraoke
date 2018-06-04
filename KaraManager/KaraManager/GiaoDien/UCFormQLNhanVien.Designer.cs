@@ -30,7 +30,6 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.gbWorkerDataInput = new System.Windows.Forms.GroupBox();
-            this.gbWorkerDataList = new System.Windows.Forms.GroupBox();
             this.btnCustomerDateSave = new System.Windows.Forms.Button();
             this.datetimeCustomerDateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.gbCustomerGender = new System.Windows.Forms.GroupBox();
@@ -45,11 +44,7 @@
             this.lbCustomerDateOfBirth = new System.Windows.Forms.Label();
             this.lbCustomerID = new System.Windows.Forms.Label();
             this.lbCustomerName = new System.Windows.Forms.Label();
-            this.tSCustomerDataList = new System.Windows.Forms.ToolStrip();
-            this.tSAddCustomerData = new System.Windows.Forms.ToolStripButton();
-            this.tSFixCustomerData = new System.Windows.Forms.ToolStripButton();
-            this.tSRemoveCustomerData = new System.Windows.Forms.ToolStripButton();
-            this.tSReloadCustomerData = new System.Windows.Forms.ToolStripButton();
+            this.gbWorkerDataList = new System.Windows.Forms.GroupBox();
             this.dgvCustomerData = new System.Windows.Forms.DataGridView();
             this.ColCustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,15 +52,20 @@
             this.ColCustomerDateOfBirth = new DevComponents.DotNetBar.Controls.DataGridViewDateTimeInputColumn();
             this.ColCustomerAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCustomerPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tSCustomerDataList = new System.Windows.Forms.ToolStrip();
+            this.tSAddCustomerData = new System.Windows.Forms.ToolStripButton();
+            this.tSFixCustomerData = new System.Windows.Forms.ToolStripButton();
+            this.tSRemoveCustomerData = new System.Windows.Forms.ToolStripButton();
+            this.tSReloadCustomerData = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.gbWorkerDataInput.SuspendLayout();
-            this.gbWorkerDataList.SuspendLayout();
             this.gbCustomerGender.SuspendLayout();
-            this.tSCustomerDataList.SuspendLayout();
+            this.gbWorkerDataList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerData)).BeginInit();
+            this.tSCustomerDataList.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -106,18 +106,6 @@
             this.gbWorkerDataInput.TabIndex = 0;
             this.gbWorkerDataInput.TabStop = false;
             this.gbWorkerDataInput.Text = "Nhập thông tin nhân viên";
-            // 
-            // gbWorkerDataList
-            // 
-            this.gbWorkerDataList.Controls.Add(this.dgvCustomerData);
-            this.gbWorkerDataList.Controls.Add(this.tSCustomerDataList);
-            this.gbWorkerDataList.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbWorkerDataList.Location = new System.Drawing.Point(3, 3);
-            this.gbWorkerDataList.Name = "gbWorkerDataList";
-            this.gbWorkerDataList.Size = new System.Drawing.Size(696, 722);
-            this.gbWorkerDataList.TabIndex = 0;
-            this.gbWorkerDataList.TabStop = false;
-            this.gbWorkerDataList.Text = "Danh sách nhân viên";
             // 
             // btnCustomerDateSave
             // 
@@ -258,58 +246,17 @@
             this.lbCustomerName.Text = "Họ và tên";
             this.lbCustomerName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // tSCustomerDataList
+            // gbWorkerDataList
             // 
-            this.tSCustomerDataList.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tSAddCustomerData,
-            this.tSFixCustomerData,
-            this.tSRemoveCustomerData,
-            this.tSReloadCustomerData});
-            this.tSCustomerDataList.Location = new System.Drawing.Point(3, 19);
-            this.tSCustomerDataList.Name = "tSCustomerDataList";
-            this.tSCustomerDataList.Size = new System.Drawing.Size(690, 33);
-            this.tSCustomerDataList.TabIndex = 2;
-            this.tSCustomerDataList.Text = "toolStrip1";
-            // 
-            // tSAddCustomerData
-            // 
-            this.tSAddCustomerData.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tSAddCustomerData.Image = global::KaraManager.Properties.Resources.Add;
-            this.tSAddCustomerData.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tSAddCustomerData.Name = "tSAddCustomerData";
-            this.tSAddCustomerData.Padding = new System.Windows.Forms.Padding(5);
-            this.tSAddCustomerData.Size = new System.Drawing.Size(130, 30);
-            this.tSAddCustomerData.Text = "Thêm nhân viên";
-            // 
-            // tSFixCustomerData
-            // 
-            this.tSFixCustomerData.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tSFixCustomerData.Image = global::KaraManager.Properties.Resources.Fix;
-            this.tSFixCustomerData.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tSFixCustomerData.Name = "tSFixCustomerData";
-            this.tSFixCustomerData.Padding = new System.Windows.Forms.Padding(5);
-            this.tSFixCustomerData.Size = new System.Drawing.Size(115, 30);
-            this.tSFixCustomerData.Text = "Sửa thông tin";
-            // 
-            // tSRemoveCustomerData
-            // 
-            this.tSRemoveCustomerData.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tSRemoveCustomerData.Image = global::KaraManager.Properties.Resources.Delete;
-            this.tSRemoveCustomerData.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tSRemoveCustomerData.Name = "tSRemoveCustomerData";
-            this.tSRemoveCustomerData.Padding = new System.Windows.Forms.Padding(5);
-            this.tSRemoveCustomerData.Size = new System.Drawing.Size(119, 30);
-            this.tSRemoveCustomerData.Text = "Xóa nhân viên";
-            // 
-            // tSReloadCustomerData
-            // 
-            this.tSReloadCustomerData.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tSReloadCustomerData.Image = global::KaraManager.Properties.Resources.Reload;
-            this.tSReloadCustomerData.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tSReloadCustomerData.Name = "tSReloadCustomerData";
-            this.tSReloadCustomerData.Padding = new System.Windows.Forms.Padding(5);
-            this.tSReloadCustomerData.Size = new System.Drawing.Size(135, 30);
-            this.tSReloadCustomerData.Text = "Tải lại danh sách";
+            this.gbWorkerDataList.Controls.Add(this.dgvCustomerData);
+            this.gbWorkerDataList.Controls.Add(this.tSCustomerDataList);
+            this.gbWorkerDataList.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbWorkerDataList.Location = new System.Drawing.Point(3, 3);
+            this.gbWorkerDataList.Name = "gbWorkerDataList";
+            this.gbWorkerDataList.Size = new System.Drawing.Size(696, 722);
+            this.gbWorkerDataList.TabIndex = 0;
+            this.gbWorkerDataList.TabStop = false;
+            this.gbWorkerDataList.Text = "Danh sách nhân viên";
             // 
             // dgvCustomerData
             // 
@@ -392,6 +339,61 @@
             this.ColCustomerPhoneNumber.HeaderText = "Số điện thoại";
             this.ColCustomerPhoneNumber.Name = "ColCustomerPhoneNumber";
             // 
+            // tSCustomerDataList
+            // 
+            this.tSCustomerDataList.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tSCustomerDataList.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tSAddCustomerData,
+            this.tSFixCustomerData,
+            this.tSRemoveCustomerData,
+            this.tSReloadCustomerData});
+            this.tSCustomerDataList.Location = new System.Drawing.Point(3, 19);
+            this.tSCustomerDataList.Name = "tSCustomerDataList";
+            this.tSCustomerDataList.Padding = new System.Windows.Forms.Padding(5);
+            this.tSCustomerDataList.Size = new System.Drawing.Size(690, 43);
+            this.tSCustomerDataList.TabIndex = 2;
+            this.tSCustomerDataList.Text = "WorkerList";
+            // 
+            // tSAddCustomerData
+            // 
+            this.tSAddCustomerData.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tSAddCustomerData.Image = global::KaraManager.Properties.Resources.Add;
+            this.tSAddCustomerData.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tSAddCustomerData.Name = "tSAddCustomerData";
+            this.tSAddCustomerData.Padding = new System.Windows.Forms.Padding(5);
+            this.tSAddCustomerData.Size = new System.Drawing.Size(130, 30);
+            this.tSAddCustomerData.Text = "Thêm nhân viên";
+            // 
+            // tSFixCustomerData
+            // 
+            this.tSFixCustomerData.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tSFixCustomerData.Image = global::KaraManager.Properties.Resources.Fix;
+            this.tSFixCustomerData.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tSFixCustomerData.Name = "tSFixCustomerData";
+            this.tSFixCustomerData.Padding = new System.Windows.Forms.Padding(5);
+            this.tSFixCustomerData.Size = new System.Drawing.Size(115, 30);
+            this.tSFixCustomerData.Text = "Sửa thông tin";
+            // 
+            // tSRemoveCustomerData
+            // 
+            this.tSRemoveCustomerData.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tSRemoveCustomerData.Image = global::KaraManager.Properties.Resources.Delete;
+            this.tSRemoveCustomerData.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tSRemoveCustomerData.Name = "tSRemoveCustomerData";
+            this.tSRemoveCustomerData.Padding = new System.Windows.Forms.Padding(5);
+            this.tSRemoveCustomerData.Size = new System.Drawing.Size(119, 30);
+            this.tSRemoveCustomerData.Text = "Xóa nhân viên";
+            // 
+            // tSReloadCustomerData
+            // 
+            this.tSReloadCustomerData.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tSReloadCustomerData.Image = global::KaraManager.Properties.Resources.Reload;
+            this.tSReloadCustomerData.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tSReloadCustomerData.Name = "tSReloadCustomerData";
+            this.tSReloadCustomerData.Padding = new System.Windows.Forms.Padding(5);
+            this.tSReloadCustomerData.Size = new System.Drawing.Size(135, 30);
+            this.tSReloadCustomerData.Text = "Tải lại danh sách";
+            // 
             // UCFormQLNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -405,12 +407,12 @@
             this.splitContainer1.ResumeLayout(false);
             this.gbWorkerDataInput.ResumeLayout(false);
             this.gbWorkerDataInput.PerformLayout();
+            this.gbCustomerGender.ResumeLayout(false);
             this.gbWorkerDataList.ResumeLayout(false);
             this.gbWorkerDataList.PerformLayout();
-            this.gbCustomerGender.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerData)).EndInit();
             this.tSCustomerDataList.ResumeLayout(false);
             this.tSCustomerDataList.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomerData)).EndInit();
             this.ResumeLayout(false);
 
         }

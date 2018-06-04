@@ -393,6 +393,16 @@ namespace KaraManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap User_Small {
+            get {
+                object obj = ResourceManager.GetObject("User_Small", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Worker {
             get {
                 object obj = ResourceManager.GetObject("Worker", resourceCulture);
