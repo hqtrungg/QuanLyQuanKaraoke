@@ -52,7 +52,7 @@
             this.grbRoomPrice.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbRoomPrice.Location = new System.Drawing.Point(0, 0);
             this.grbRoomPrice.Name = "grbRoomPrice";
-            this.grbRoomPrice.Size = new System.Drawing.Size(560, 343);
+            this.grbRoomPrice.Size = new System.Drawing.Size(921, 474);
             this.grbRoomPrice.TabIndex = 0;
             this.grbRoomPrice.TabStop = false;
             this.grbRoomPrice.Text = "Danh sách đơn giá";
@@ -67,9 +67,9 @@
             this.ColRoomName,
             this.ColRoomCat,
             this.ColPrice});
-            this.dgvRoomPrice.Location = new System.Drawing.Point(3, 47);
+            this.dgvRoomPrice.Location = new System.Drawing.Point(3, 55);
             this.dgvRoomPrice.Name = "dgvRoomPrice";
-            this.dgvRoomPrice.Size = new System.Drawing.Size(554, 296);
+            this.dgvRoomPrice.Size = new System.Drawing.Size(918, 419);
             this.dgvRoomPrice.TabIndex = 1;
             // 
             // ColRoomID
@@ -101,17 +101,20 @@
             this.tSReloadRoomPrice});
             this.tsRoomPrice.Location = new System.Drawing.Point(3, 19);
             this.tsRoomPrice.Name = "tsRoomPrice";
-            this.tsRoomPrice.Size = new System.Drawing.Size(554, 33);
+            this.tsRoomPrice.Size = new System.Drawing.Size(915, 33);
             this.tsRoomPrice.TabIndex = 0;
             this.tsRoomPrice.Text = "RoomPriceToolStrip";
             // 
             // tSAddRoomPrice
             // 
+            this.tSAddRoomPrice.Checked = true;
+            this.tSAddRoomPrice.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.tSAddRoomPrice.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tSAddRoomPrice.Image = global::KaraManager.Properties.Resources.Add;
             this.tSAddRoomPrice.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tSAddRoomPrice.Name = "tSAddRoomPrice";
             this.tSAddRoomPrice.Padding = new System.Windows.Forms.Padding(5);
-            this.tSAddRoomPrice.Size = new System.Drawing.Size(125, 30);
+            this.tSAddRoomPrice.Size = new System.Drawing.Size(131, 30);
             this.tSAddRoomPrice.Text = "Thêm giá phòng";
             // 
             // tSFixRoomPrice
@@ -145,7 +148,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 343);
+            this.ClientSize = new System.Drawing.Size(920, 473);
             this.Controls.Add(this.grbRoomPrice);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

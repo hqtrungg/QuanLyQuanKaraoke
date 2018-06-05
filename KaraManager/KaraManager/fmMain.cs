@@ -60,5 +60,11 @@ namespace KaraManager
         {
             OpenForm(typeof(FormQLKhachHang));
         }
+
+        private void btnRoomPrice_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            OpenForm(typeof(FormDonGiaPhong));
+
+        }
     }
 }

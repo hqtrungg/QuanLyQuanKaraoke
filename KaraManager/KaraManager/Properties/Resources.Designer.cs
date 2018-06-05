@@ -163,6 +163,26 @@ namespace KaraManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Drink {
+            get {
+                object obj = ResourceManager.GetObject("Drink", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Drink1 {
+            get {
+                object obj = ResourceManager.GetObject("Drink1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Female {
             get {
                 object obj = ResourceManager.GetObject("Female", resourceCulture);
@@ -176,6 +196,16 @@ namespace KaraManager.Properties {
         internal static System.Drawing.Bitmap Fix {
             get {
                 object obj = ResourceManager.GetObject("Fix", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Food {
+            get {
+                object obj = ResourceManager.GetObject("Food", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,6 +313,16 @@ namespace KaraManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Print2 {
+            get {
+                object obj = ResourceManager.GetObject("Print2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Printer {
             get {
                 object obj = ResourceManager.GetObject("Printer", resourceCulture);
@@ -343,6 +383,16 @@ namespace KaraManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Search {
+            get {
+                object obj = ResourceManager.GetObject("Search", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SingingRoom {
             get {
                 object obj = ResourceManager.GetObject("SingingRoom", resourceCulture);
@@ -376,6 +426,16 @@ namespace KaraManager.Properties {
         internal static System.Drawing.Bitmap Time {
             get {
                 object obj = ResourceManager.GetObject("Time", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TraPhong {
+            get {
+                object obj = ResourceManager.GetObject("TraPhong", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

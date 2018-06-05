@@ -31,20 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQLKhachHang));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.gbCustomerDataInput = new System.Windows.Forms.GroupBox();
-            this.btnCustomerDateSave = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.gbCustomerGender = new System.Windows.Forms.GroupBox();
-            this.rbtnCustomerFemale = new System.Windows.Forms.RadioButton();
-            this.rbtnCustomerMale = new System.Windows.Forms.RadioButton();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lbCustomerAddress = new System.Windows.Forms.Label();
-            this.lbCustomerPhoneNumber = new System.Windows.Forms.Label();
-            this.lbCustomerDateOfBirth = new System.Windows.Forms.Label();
-            this.lbCustomerID = new System.Windows.Forms.Label();
-            this.lbCustomerName = new System.Windows.Forms.Label();
             this.gbCustomerDataList = new System.Windows.Forms.GroupBox();
             this.dgvCustomerData = new System.Windows.Forms.DataGridView();
             this.ColCustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,11 +46,19 @@
             this.ColCustomerAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCustomerPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tsCustomerDataList = new System.Windows.Forms.ToolStrip();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnCustomerDateSave = new System.Windows.Forms.Button();
+            this.rbtnCustomerFemale = new System.Windows.Forms.RadioButton();
+            this.rbtnCustomerMale = new System.Windows.Forms.RadioButton();
+            this.lbCustomerAddress = new System.Windows.Forms.Label();
+            this.lbCustomerPhoneNumber = new System.Windows.Forms.Label();
+            this.lbCustomerDateOfBirth = new System.Windows.Forms.Label();
+            this.lbCustomerID = new System.Windows.Forms.Label();
+            this.lbCustomerName = new System.Windows.Forms.Label();
             this.tSAddCustomerData = new System.Windows.Forms.ToolStripButton();
             this.tSFixCustomerData = new System.Windows.Forms.ToolStripButton();
             this.tSRemoveCustomerData = new System.Windows.Forms.ToolStripButton();
             this.tSReloadCustomerData = new System.Windows.Forms.ToolStripButton();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -111,18 +111,6 @@
             this.gbCustomerDataInput.TabStop = false;
             this.gbCustomerDataInput.Text = "Nhập thông tin khách hàng";
             // 
-            // btnCustomerDateSave
-            // 
-            this.btnCustomerDateSave.Image = global::KaraManager.Properties.Resources.Tick;
-            this.btnCustomerDateSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCustomerDateSave.Location = new System.Drawing.Point(76, 414);
-            this.btnCustomerDateSave.Name = "btnCustomerDateSave";
-            this.btnCustomerDateSave.Size = new System.Drawing.Size(131, 44);
-            this.btnCustomerDateSave.TabIndex = 11;
-            this.btnCustomerDateSave.Text = "Lưu danh sách";
-            this.btnCustomerDateSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCustomerDateSave.UseVisualStyleBackColor = true;
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(9, 231);
@@ -140,32 +128,6 @@
             this.gbCustomerGender.TabIndex = 9;
             this.gbCustomerGender.TabStop = false;
             this.gbCustomerGender.Text = "Giới tính";
-            // 
-            // rbtnCustomerFemale
-            // 
-            this.rbtnCustomerFemale.Image = global::KaraManager.Properties.Resources.Female;
-            this.rbtnCustomerFemale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rbtnCustomerFemale.Location = new System.Drawing.Point(180, 22);
-            this.rbtnCustomerFemale.Name = "rbtnCustomerFemale";
-            this.rbtnCustomerFemale.Size = new System.Drawing.Size(60, 24);
-            this.rbtnCustomerFemale.TabIndex = 1;
-            this.rbtnCustomerFemale.TabStop = true;
-            this.rbtnCustomerFemale.Text = "Nữ";
-            this.rbtnCustomerFemale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rbtnCustomerFemale.UseVisualStyleBackColor = true;
-            // 
-            // rbtnCustomerMale
-            // 
-            this.rbtnCustomerMale.Image = global::KaraManager.Properties.Resources.Male;
-            this.rbtnCustomerMale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rbtnCustomerMale.Location = new System.Drawing.Point(46, 22);
-            this.rbtnCustomerMale.Name = "rbtnCustomerMale";
-            this.rbtnCustomerMale.Size = new System.Drawing.Size(71, 24);
-            this.rbtnCustomerMale.TabIndex = 0;
-            this.rbtnCustomerMale.TabStop = true;
-            this.rbtnCustomerMale.Text = "Nam";
-            this.rbtnCustomerMale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.rbtnCustomerMale.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
@@ -196,61 +158,6 @@
             this.textBox1.TabIndex = 5;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // lbCustomerAddress
-            // 
-            this.lbCustomerAddress.Image = global::KaraManager.Properties.Resources.Address;
-            this.lbCustomerAddress.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbCustomerAddress.Location = new System.Drawing.Point(10, 271);
-            this.lbCustomerAddress.Name = "lbCustomerAddress";
-            this.lbCustomerAddress.Size = new System.Drawing.Size(80, 30);
-            this.lbCustomerAddress.TabIndex = 4;
-            this.lbCustomerAddress.Text = "     Địa chỉ";
-            this.lbCustomerAddress.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lbCustomerPhoneNumber
-            // 
-            this.lbCustomerPhoneNumber.Image = global::KaraManager.Properties.Resources.PhoneNumber;
-            this.lbCustomerPhoneNumber.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbCustomerPhoneNumber.Location = new System.Drawing.Point(10, 339);
-            this.lbCustomerPhoneNumber.Name = "lbCustomerPhoneNumber";
-            this.lbCustomerPhoneNumber.Size = new System.Drawing.Size(107, 29);
-            this.lbCustomerPhoneNumber.TabIndex = 3;
-            this.lbCustomerPhoneNumber.Text = "Số điện thoại";
-            this.lbCustomerPhoneNumber.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lbCustomerDateOfBirth
-            // 
-            this.lbCustomerDateOfBirth.Image = global::KaraManager.Properties.Resources.Birthday;
-            this.lbCustomerDateOfBirth.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbCustomerDateOfBirth.Location = new System.Drawing.Point(10, 204);
-            this.lbCustomerDateOfBirth.Name = "lbCustomerDateOfBirth";
-            this.lbCustomerDateOfBirth.Size = new System.Drawing.Size(89, 26);
-            this.lbCustomerDateOfBirth.TabIndex = 2;
-            this.lbCustomerDateOfBirth.Text = "Ngày sinh";
-            this.lbCustomerDateOfBirth.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lbCustomerID
-            // 
-            this.lbCustomerID.Image = global::KaraManager.Properties.Resources.ID;
-            this.lbCustomerID.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbCustomerID.Location = new System.Drawing.Point(10, 86);
-            this.lbCustomerID.Name = "lbCustomerID";
-            this.lbCustomerID.Size = new System.Drawing.Size(71, 24);
-            this.lbCustomerID.TabIndex = 1;
-            this.lbCustomerID.Text = "Mã số";
-            this.lbCustomerID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lbCustomerName
-            // 
-            this.lbCustomerName.Image = global::KaraManager.Properties.Resources.Name;
-            this.lbCustomerName.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbCustomerName.Location = new System.Drawing.Point(9, 28);
-            this.lbCustomerName.Name = "lbCustomerName";
-            this.lbCustomerName.Size = new System.Drawing.Size(90, 24);
-            this.lbCustomerName.TabIndex = 0;
-            this.lbCustomerName.Text = "Họ và tên";
-            this.lbCustomerName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // gbCustomerDataList
             // 
             this.gbCustomerDataList.Controls.Add(this.dgvCustomerData);
@@ -275,9 +182,9 @@
             this.ColCustomerDateOfBirth,
             this.ColCustomerAddress,
             this.ColCustomerPhoneNumber});
-            this.dgvCustomerData.Location = new System.Drawing.Point(3, 55);
+            this.dgvCustomerData.Location = new System.Drawing.Point(3, 65);
             this.dgvCustomerData.Name = "dgvCustomerData";
-            this.dgvCustomerData.Size = new System.Drawing.Size(604, 415);
+            this.dgvCustomerData.Size = new System.Drawing.Size(604, 405);
             this.dgvCustomerData.TabIndex = 1;
             // 
             // ColCustomerID
@@ -359,8 +266,103 @@
             this.tsCustomerDataList.TabIndex = 0;
             this.tsCustomerDataList.Text = "CustomerList";
             // 
+            // btnCustomerDateSave
+            // 
+            this.btnCustomerDateSave.Image = global::KaraManager.Properties.Resources.Tick;
+            this.btnCustomerDateSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCustomerDateSave.Location = new System.Drawing.Point(76, 414);
+            this.btnCustomerDateSave.Name = "btnCustomerDateSave";
+            this.btnCustomerDateSave.Size = new System.Drawing.Size(131, 44);
+            this.btnCustomerDateSave.TabIndex = 11;
+            this.btnCustomerDateSave.Text = "Lưu danh sách";
+            this.btnCustomerDateSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCustomerDateSave.UseVisualStyleBackColor = true;
+            // 
+            // rbtnCustomerFemale
+            // 
+            this.rbtnCustomerFemale.Image = global::KaraManager.Properties.Resources.Female;
+            this.rbtnCustomerFemale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtnCustomerFemale.Location = new System.Drawing.Point(180, 22);
+            this.rbtnCustomerFemale.Name = "rbtnCustomerFemale";
+            this.rbtnCustomerFemale.Size = new System.Drawing.Size(60, 24);
+            this.rbtnCustomerFemale.TabIndex = 1;
+            this.rbtnCustomerFemale.TabStop = true;
+            this.rbtnCustomerFemale.Text = "Nữ";
+            this.rbtnCustomerFemale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rbtnCustomerFemale.UseVisualStyleBackColor = true;
+            // 
+            // rbtnCustomerMale
+            // 
+            this.rbtnCustomerMale.Image = global::KaraManager.Properties.Resources.Male;
+            this.rbtnCustomerMale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rbtnCustomerMale.Location = new System.Drawing.Point(46, 22);
+            this.rbtnCustomerMale.Name = "rbtnCustomerMale";
+            this.rbtnCustomerMale.Size = new System.Drawing.Size(71, 24);
+            this.rbtnCustomerMale.TabIndex = 0;
+            this.rbtnCustomerMale.TabStop = true;
+            this.rbtnCustomerMale.Text = "Nam";
+            this.rbtnCustomerMale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.rbtnCustomerMale.UseVisualStyleBackColor = true;
+            // 
+            // lbCustomerAddress
+            // 
+            this.lbCustomerAddress.Image = global::KaraManager.Properties.Resources.Address;
+            this.lbCustomerAddress.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbCustomerAddress.Location = new System.Drawing.Point(10, 271);
+            this.lbCustomerAddress.Name = "lbCustomerAddress";
+            this.lbCustomerAddress.Size = new System.Drawing.Size(80, 30);
+            this.lbCustomerAddress.TabIndex = 4;
+            this.lbCustomerAddress.Text = "     Địa chỉ";
+            this.lbCustomerAddress.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lbCustomerPhoneNumber
+            // 
+            this.lbCustomerPhoneNumber.Image = global::KaraManager.Properties.Resources.PhoneNumber;
+            this.lbCustomerPhoneNumber.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbCustomerPhoneNumber.Location = new System.Drawing.Point(10, 339);
+            this.lbCustomerPhoneNumber.Name = "lbCustomerPhoneNumber";
+            this.lbCustomerPhoneNumber.Size = new System.Drawing.Size(107, 29);
+            this.lbCustomerPhoneNumber.TabIndex = 3;
+            this.lbCustomerPhoneNumber.Text = "Số điện thoại";
+            this.lbCustomerPhoneNumber.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lbCustomerDateOfBirth
+            // 
+            this.lbCustomerDateOfBirth.Image = global::KaraManager.Properties.Resources.Birthday;
+            this.lbCustomerDateOfBirth.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbCustomerDateOfBirth.Location = new System.Drawing.Point(10, 204);
+            this.lbCustomerDateOfBirth.Name = "lbCustomerDateOfBirth";
+            this.lbCustomerDateOfBirth.Size = new System.Drawing.Size(89, 26);
+            this.lbCustomerDateOfBirth.TabIndex = 2;
+            this.lbCustomerDateOfBirth.Text = "Ngày sinh";
+            this.lbCustomerDateOfBirth.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lbCustomerID
+            // 
+            this.lbCustomerID.Image = global::KaraManager.Properties.Resources.ID;
+            this.lbCustomerID.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbCustomerID.Location = new System.Drawing.Point(10, 86);
+            this.lbCustomerID.Name = "lbCustomerID";
+            this.lbCustomerID.Size = new System.Drawing.Size(71, 24);
+            this.lbCustomerID.TabIndex = 1;
+            this.lbCustomerID.Text = "Mã số";
+            this.lbCustomerID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lbCustomerName
+            // 
+            this.lbCustomerName.Image = global::KaraManager.Properties.Resources.Name;
+            this.lbCustomerName.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbCustomerName.Location = new System.Drawing.Point(9, 28);
+            this.lbCustomerName.Name = "lbCustomerName";
+            this.lbCustomerName.Size = new System.Drawing.Size(90, 24);
+            this.lbCustomerName.TabIndex = 0;
+            this.lbCustomerName.Text = "Họ và tên";
+            this.lbCustomerName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // tSAddCustomerData
             // 
+            this.tSAddCustomerData.Checked = true;
+            this.tSAddCustomerData.CheckState = System.Windows.Forms.CheckState.Checked;
             this.tSAddCustomerData.Image = global::KaraManager.Properties.Resources.Add;
             this.tSAddCustomerData.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tSAddCustomerData.Name = "tSAddCustomerData";

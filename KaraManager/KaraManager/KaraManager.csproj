@@ -110,6 +110,12 @@
     <Compile Include="GiaoDien\FormQLKhachHang.Designer.cs">
       <DependentUpon>FormQLKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\FormTraPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\FormTraPhong.Designer.cs">
+      <DependentUpon>FormTraPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="GiaoDien\UCFormDatPhong.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\FormQLPhongHat.resx">
       <DependentUpon>FormQLPhongHat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\FormTraPhong.resx">
+      <DependentUpon>FormTraPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\UCFormDatPhong.resx">
       <DependentUpon>UCFormDatPhong.cs</DependentUpon>
@@ -299,6 +308,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="IMG\User_Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\TraPhong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Print2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Drink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Food.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

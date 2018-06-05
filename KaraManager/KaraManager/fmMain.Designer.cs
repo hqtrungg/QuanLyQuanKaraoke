@@ -181,6 +181,7 @@
             this.btnRoomPrice.Id = 7;
             this.btnRoomPrice.ImageIndex = 9;
             this.btnRoomPrice.Name = "btnRoomPrice";
+            this.btnRoomPrice.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRoomPrice_ItemClick);
             // 
             // btnWorker
             // 

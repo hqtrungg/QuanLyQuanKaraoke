@@ -276,12 +276,15 @@
             // 
             // tSAddRoomData
             // 
+            this.tSAddRoomData.Checked = true;
+            this.tSAddRoomData.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.tSAddRoomData.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tSAddRoomData.Image = global::KaraManager.Properties.Resources.Add;
             this.tSAddRoomData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tSAddRoomData.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tSAddRoomData.Name = "tSAddRoomData";
             this.tSAddRoomData.Padding = new System.Windows.Forms.Padding(5);
-            this.tSAddRoomData.Size = new System.Drawing.Size(126, 30);
+            this.tSAddRoomData.Size = new System.Drawing.Size(132, 30);
             this.tSAddRoomData.Text = "Thêm phòng hát";
             this.tSAddRoomData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tSAddRoomData.Click += new System.EventHandler(this.toolStripButton1_Click);
